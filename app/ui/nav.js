@@ -8,9 +8,7 @@ export default function Nav() {
     
     
     const [isOpen, setIsOpen] = useState(false);
-    const handleClick = () => {
-    setIsOpen(!isOpen);
-    }
+    
     
     return(
         <div>
@@ -30,16 +28,16 @@ export default function Nav() {
                 <Link href="/" className="flex items-center ease-in-out duration-300">
                     <Image src="/VVM-images/Veca-Vision2.png" alt="/" width={75} height={75} className="m-0 p-0" />
                 </Link>
-                <div className="space-y-2 content-center" onClick={handleClick}>
-                    <span className="block w-6 border-b" />
-                    <span className="block w-6 border-b" />
-                </div>
+                <button className="space-y-2 content-center" onClick={ () => setIsOpen(!isOpen) }>
+                    <span className={ `block w-6 border-b ${ isOpen ? 'rotate-45 translate-y-1 duration-300' : 'rotate-0 duration-300' } `} />
+                    <span className={ `block w-6 border-b ${ isOpen ? '-rotate-45 -translate-y-1 duration-300' : 'rotate-0 duration-300' } `} />
+                </button>
             </div>
-            <div className="${isOpen ? flex flex-col pt-10 space-y-10 : hidden}">
-                <Link href="/services" className="relative w-fit">Services</Link>
-                <Link href="/portfolio" className="relative w-fit">Portfolio</Link>
-                <Link href="/about" className="relative w-fit">About</Link>
-                <Link href="/contact" className="relative w-fit">Contact</Link>
+            <div className={ `md:hidden w-screen float-right ${ isOpen ? 'flex flex-col' : 'hidden' }` }>
+                <Link href="/services" className="text-right py-4 pr-6 my-3 border-b border-vvm-pink">Services</Link>
+                <Link href="/portfolio" className="text-right py-4 pr-6 mb-3 border-b border-vvm-teal">Portfolio</Link>
+                <Link href="/about" className="text-right py-4 pr-6 mb-3 border-b border-vvm-blue">About</Link>
+                <Link href="/contact" className="text-right py-4 pr-6 border-b border-white">Contact</Link>
             </div>
         </div>
     );
