@@ -39,7 +39,7 @@ export default function Contact(){
                 </div>
 
                 <div className="flex flex-col">
-                    <label className="mb-1">Questions and Comments:</label>
+                    <label className="mb-1">Tell Us What You're Looking For:</label>
                     <textarea className="mb-6 w-96 h-64 rounded-lg text-[#000] pl-2 pr-2" id="quest-com" name="quest-com" required></textarea>
                 </div>
 
