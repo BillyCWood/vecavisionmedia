@@ -27,14 +27,12 @@ export default function RootLayout({ children }) {
 
       <body className={inter.className}>
         
-        <div className="flex flex-col min-h-screen justify-between overflow-hidden">
-          <header>
-
-          <Nav />  
-
+        <div className="flex flex-col min-h-screen justify-between">
+          <header className="sticky top-0">
+            <Nav />  
           </header>
           
-          <div className="mb-auto">
+          <div className="mb-auto overflow-x-hidden">
             {children}
           </div>
           
