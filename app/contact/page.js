@@ -11,7 +11,7 @@ export default function Contact(){
             <p className="text-center mt-3">Phone: (406) 595-6899</p>
 
 
-            <form className="flex flex-col mt-6 pt-6 pb-10 items-center" method="POST">
+            <form className="flex flex-col mt-6 pt-6 pb-10 items-center" action="https://formsubmit.co/rowly.dev@gmail.com" method="POST">
                 
                 <div className="flex flex-col">
                     <label className="mb-1">First Name:</label>
