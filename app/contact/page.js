@@ -43,8 +43,11 @@ export default function Contact(){
                     <textarea className="mb-6 w-96 h-64 rounded-lg text-[#000] pl-2 pr-2" id="quest-com" name="quest-com" required></textarea>
                 </div>
 
+                <input type="hidden" name="_next" value="https://billycwood.github.io/Veca-Vision-Media.github.io/src/form_submission_thank_you.html" />
+                <input type="hidden" name="_subject" value="Veca Vision - New Contact Submission!" />
+                <input type="hidden" name="_template" value="box" />
 
-                <Button text="Submit" />
+                <button type="submit"><Button text="Submit" /></button>
 
             </form>
 
