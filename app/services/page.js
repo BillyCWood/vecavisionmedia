@@ -4,6 +4,7 @@ import { config } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Card from '../ui/card';
 import Button from '../ui/button';
+import Link from 'next/link';
 
 
 config.autoAddCss = false
@@ -61,7 +62,7 @@ export default function Services(){
             
             <div className='pt-10 flex flex-col items-center'>
                 <p className='mb-8'>Pricing is based on the project. Want to know how much your project will cost?</p>
-                <Button text="Request an Estimate" />
+                <Link href={"/contact"}><Button text="Request an Estimate" /></Link>
             </div>
         </main>
     );
