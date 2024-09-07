@@ -14,8 +14,8 @@ export default function Services(){
     return (
         <main className="pt-10 pb-10 text-center">
             <div className="border-b mb-6 pb-6 border-vvm-teal">
-                <h2 className='font-bold text-2xl mb-10'>Who You Are</h2>
-                <p>A local business owner desiring to grow and reach new customers through video marketing.</p>
+                <h2 className='font-bold text-2xl mb-4'>Recurring Content Plan</h2>
+                <p>Levarage a curated monthly marketing plan, tailored to your brand, to consistently engage your audience and drive result.</p>
             </div>
             <div className="border-b mb-6 pb-6 border-vvm-blue">
                 <h2 className='font-bold text-2xl'>Videography</h2>
@@ -51,12 +51,25 @@ export default function Services(){
             </div> 
 
             <div className="border-b mb-6 pb-6 border-vvm-pink">
-                <h2 className='font-bold text-2xl'>Add Ons</h2>
-                <div className='grid grid-rows-1 grid-cols-2 gap-6 place-items-center mt-10 w-80 m-auto'>
-                    <Card icon={<svg xmlns="http://www.w3.org/2000/svg" height={20} viewBox="0 0 448 512"><path fill='#000' d="M219.3 .5c3.1-.6 6.3-.6 9.4 0l200 40C439.9 42.7 448 52.6 448 64s-8.1 21.3-19.3 23.5L352 102.9l0 57.1c0 70.7-57.3 128-128 128s-128-57.3-128-128l0-57.1L48 93.3l0 65.1 15.7 78.4c.9 4.7-.3 9.6-3.3 13.3s-7.6 5.9-12.4 5.9l-32 0c-4.8 0-9.3-2.1-12.4-5.9s-4.3-8.6-3.3-13.3L16 158.4l0-71.8C6.5 83.3 0 74.3 0 64C0 52.6 8.1 42.7 19.3 40.5l200-40zM111.9 327.7c10.5-3.4 21.8 .4 29.4 8.5l71 75.5c6.3 6.7 17 6.7 23.3 0l71-75.5c7.6-8.1 18.9-11.9 29.4-8.5C401 348.6 448 409.4 448 481.3c0 17-13.8 30.7-30.7 30.7L30.7 512C13.8 512 0 498.2 0 481.3c0-71.9 47-132.7 111.9-153.6z"/></svg>} 
-                        text="Graduation" />
-                    <Card icon={<svg xmlns="http://www.w3.org/2000/svg" height={20} viewBox="0 0 576 512"><path fill='#000' d="M547.6 103.8L490.3 13.1C485.2 5 476.1 0 466.4 0L109.6 0C99.9 0 90.8 5 85.7 13.1L28.3 103.8c-29.6 46.8-3.4 111.9 51.9 119.4c4 .5 8.1 .8 12.1 .8c26.1 0 49.3-11.4 65.2-29c15.9 17.6 39.1 29 65.2 29c26.1 0 49.3-11.4 65.2-29c15.9 17.6 39.1 29 65.2 29c26.2 0 49.3-11.4 65.2-29c16 17.6 39.1 29 65.2 29c4.1 0 8.1-.3 12.1-.8c55.5-7.4 81.8-72.5 52.1-119.4zM499.7 254.9c0 0 0 0-.1 0c-5.3 .7-10.7 1.1-16.2 1.1c-12.4 0-24.3-1.9-35.4-5.3L448 384l-320 0 0-133.4c-11.2 3.5-23.2 5.4-35.6 5.4c-5.5 0-11-.4-16.3-1.1l-.1 0c-4.1-.6-8.1-1.3-12-2.3L64 384l0 64c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-64 0-131.4c-4 1-8 1.8-12.3 2.3z"/></svg>} 
-                        text="Merchandise" />
+                <h2 className='font-bold text-2xl mb-4'>Add-Ons</h2>
+                <p>Maximize the impact of your project with these valuable add-ons and more</p>
+                <div className='grid grid-rows-2 grid-cols-5 gap-6 place-items-center mt-10 2xl:w-1/3 m-auto'>
+                    
+                    <Card text="RCP Contract" />
+                    <Card text="Voice Over Integration" />
+                    
+                    <Card text="Video Photo Grabs" />
+                    <Card text="Captivating Thumbnail Work" />
+
+                    <Card text="Pre-Post Story Teasers" />
+                    <Card text="Variant Edits" />
+
+                    <Card text="Story Promos and Boomerangs" />
+                    <Card text="Managed Content Posting" />
+
+                    <Card text="Behind the Scenes" />
+                    <Card text="Teaser Posts" />
+                    
                 </div>
             </div>
             

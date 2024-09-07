@@ -12,14 +12,13 @@ export default function Button(props){
             ease-in-out 
             duration-300 
             content-center
-            text-center 
-            hover:text-[#000] 
-            hover:bg-[#fff] 
+            text-center
+            hover:bg-vvm-pink 
             hover:cursor-pointer
             hover:pr-5"
             >
 
-                <span className="inline-block relative after:content-['\00BB'] after:absolute after:-right-5 after:opacity-0 after:group-hover:opacity-100 after:ease-in-out after:duration-300">{props.text}</span>
+                <span className="inline-block relative after:content-['\00BB'] after:text-vvm-lightblue after:absolute after:-right-5 after:opacity-0 after:group-hover:opacity-100 after:ease-in-out after:duration-300">{props.text}</span>
 
             </div>
         

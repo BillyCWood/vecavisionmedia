@@ -34,7 +34,7 @@ export default function Nav() {
                     <span className={ `block w-6 border-b ${ isOpen ? '-rotate-45 duration-500' : 'rotate-0 duration-500' } `} />
                 </button>
             </div>
-            <div className={ `lg:hidden w-screen float-right ${ isOpen ? 'flex flex-col' : 'hidden' }` }>
+            <div className={ `lg:hidden w-screen float-right bg-[#000] ${ isOpen ? 'flex flex-col' : 'hidden' }` }>
                 <Link href="/services" className="text-right py-4 pr-6 my-3 border-b border-vvm-pink">Services</Link>
                 <Link href="/portfolio" className="text-right py-4 pr-6 mb-3 border-b border-vvm-teal">Portfolio</Link>
                 <Link href="/about" className="text-right py-4 pr-6 mb-3 border-b border-vvm-blue">About</Link>
