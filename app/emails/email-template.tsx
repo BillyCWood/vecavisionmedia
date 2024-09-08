@@ -24,12 +24,13 @@ export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
     fname, lname, email, phone, org, message
 }) => (
     <div className='flex flex-col gap-y-6 justify-center'>
-        <h1>Welcome, { fname } { lname }</h1>
-        <p>Here is the info you submitted:</p>
-        <p>{ email }</p>
-        <p>{ phone }</p>
-        <p>{ org }</p>
-        <p>{ message }</p>
+        <h1>Someone Wants Your Service!</h1>
+        <p>Here is the info they submitted:</p>
+        <p>name: { fname } { lname }</p>
+        <p>email: { email }</p>
+        <p>phone: { phone }</p>
+        <p>org: { org }</p>
+        <p>message:<br /> { message }</p>
     </div>
 );
 

@@ -13,7 +13,6 @@ import { faInstagram, faFacebook, faLinkedin, faYoutube } from '@fortawesome/fre
 
 const inter = Inter({ subsets: ["latin"] });
 
-require('dotenv').config();
 
 export const metadata = {
   title: "Veca Vision Media",

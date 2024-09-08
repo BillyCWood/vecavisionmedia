@@ -2,7 +2,7 @@ import { EmailTemplate } from '../../emails/email-template';
 import { Resend } from 'resend';
 
 
-const resend = new Resend('re_6vQ68MNi_JT7dfCRyUbK5HJ581x1YndCS');
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(request:Request, res:Response) {
   

@@ -40,7 +40,12 @@ export default function Contact(){
         if(res.status === 200) {
             alert("Success! Your message and information has been submitted! Thank you!");
             setIsLoading(false);
-            router.refresh();
+            setFname('');
+            setLname('');
+            setEmail('');
+            setPhone('');
+            setOrg('');
+            setMessage('');
         }
         else if(res.status === 500) {
             alert("Uh oh! Something went wrong on our end. We apologize for the inconvenience.")
