@@ -1,9 +1,52 @@
+'use client';
 import Image from "next/image";
 import Button from "../ui/button";
+import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 
 
 export default function Contact(){
+
+    const router = useRouter();
+
+    const [fname, setFname] = useState('');
+    const [lname, setLname] = useState('');
+    const [email, setEmail] = useState('');
+    const [phone, setPhone] = useState('');
+    const [org, setOrg] = useState('');
+    const [message, setMessage] = useState('');
+    const [isLoading, setIsLoading] = useState(false);
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setIsLoading(true);
+
+        const data = {
+            fname, 
+            lname, 
+            email, 
+            phone, 
+            org, 
+            message 
+        };
+
+        console.log(data);
+
+        const res = await fetch( "/api/send", { method: "POST" });
+        
+        console.log(res.status);
+
+        if(res.status === 200) {
+            alert("Success! Your message and information has been submitted! Thank you!");
+        }
+        else if(res.status === 500) {
+            alert("Uh oh! Something went wrong on our end. We apologize for the inconvenience.")
+        }
+
+    };
+
+
     return (
         <main className="pt-10 pb-10">
             <h2 className="font-bold text-xl text-center">Contact Veca Vision Media</h2>
@@ -16,43 +59,41 @@ export default function Contact(){
             <p className="text-center mt-3">Phone: (406) 595-6899</p>
 
 
-            <form className="flex flex-col mt-6 pt-6 pb-10 items-center" method="POST">
+            <form className="flex flex-col mt-6 pt-6 pb-10 items-center" onSubmit={handleSubmit}>
                 
                 <div className="flex flex-col">
                     <label className="mb-1">First Name:</label>
-                    <input className="mb-6 w-96 rounded-lg text-[#000] pl-2" type="text" id="fname" name="fname" value={FormData.fname} required />
+                    <input className="mb-6 w-96 rounded-lg text-[#000] pl-2" type="text" id="fname" name="fname" value={fname} onChange={ (e) => setFname(e.target.value) } required />
                 </div>
 
                 <div className="flex flex-col">
                     <label className="mb-1">Last Name:</label>
-                    <input className="mb-6 w-96 rounded-lg text-[#000] pl-2" type="text" id="lname" name="lname" value={FormData.lname} required />
+                    <input className="mb-6 w-96 rounded-lg text-[#000] pl-2" type="text" id="lname" name="lname" value={lname} onChange={ (e) => setLname(e.target.value) } required />
                 </div>
 
                 <div className="flex flex-col">
                     <label className="mb-1">Email:</label>
-                    <input className="mb-6 w-96 rounded-lg text-[#000] pl-2" type="email" id="email" name="email" value={FormData.email} required />
+                    <input className="mb-6 w-96 rounded-lg text-[#000] pl-2" type="email" id="email" name="email" value={email} onChange={ (e) => setEmail(e.target.value) } required />
                 </div>
 
                 <div className="flex flex-col">
                     <label className="mb-1">Phone:</label>
-                    <input className="mb-6 w-96 rounded-lg text-[#000] pl-2" type="text" id="phone" name="phone" value={FormData.phone} required />
+                    <input className="mb-6 w-96 rounded-lg text-[#000] pl-2" type="text" id="phone" name="phone" value={phone} onChange={ (e) => setPhone(e.target.value) } required />
                 </div>
 
                 <div className="flex flex-col">
                     <label className="mb-1">Organization (if applicable):</label>
-                    <input className="mb-6 w-96 rounded-lg text-[#000] pl-2" type="text" id="org" name="org" value={FormData.org} required />
+                    <input className="mb-6 w-96 rounded-lg text-[#000] pl-2" type="text" id="org" name="org" value={org} onChange={ (e) => setOrg(e.target.value) } required />
                 </div>
 
                 <div className="flex flex-col">
                     <label className="mb-1">Tell Us What You're Looking For:</label>
-                    <textarea className="mb-6 w-96 h-64 rounded-lg text-[#000] pl-2 pr-2" id="quest-com" name="quest-com" value={FormData.message} required></textarea>
+                    <textarea className="mb-6 w-96 h-64 rounded-lg text-[#000] pl-2 pr-2" type="text" id="message" name="message" value={message} onChange={ (e) => setMessage(e.target.value) } required />
                 </div>
 
-                <input type="hidden" name="_next" value="https://billycwood.github.io/Veca-Vision-Media.github.io/src/form_submission_thank_you.html" />
-                <input type="hidden" name="_subject" value="Veca Vision - New Contact Submission!" />
-                <input type="hidden" name="_template" value="box" />
-
-                <button type="submit"><Button text="Submit" /></button>
+                <button type="submit" disabled={isLoading}>
+                    { !isLoading && <Button text="Submit" /> }{ isLoading && <Button text="Sending..." /> }
+                </button>
 
             </form>
 
