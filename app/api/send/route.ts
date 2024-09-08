@@ -1,6 +1,8 @@
 import { EmailTemplate } from '../../emails/email-template';
 import { Resend } from 'resend';
 
+require('dotenv').config();
+
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(request:Request, res:Response) {
