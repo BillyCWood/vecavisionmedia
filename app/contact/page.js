@@ -33,12 +33,14 @@ export default function Contact(){
 
         console.log(data);
 
-        const res = await fetch( "/api/send", { method: "POST" });
+        const res = await fetch( "/api/send", { method: "POST", body: JSON.stringify(data) });
         
         console.log(res.status);
 
         if(res.status === 200) {
             alert("Success! Your message and information has been submitted! Thank you!");
+            setIsLoading(false);
+            router.refresh();
         }
         else if(res.status === 500) {
             alert("Uh oh! Something went wrong on our end. We apologize for the inconvenience.")
