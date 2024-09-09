@@ -31,6 +31,11 @@ export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
         <p>phone: { phone }</p>
         <p>org: { org }</p>
         <p>message:<br /> { message }</p>
+        <br />
+        <br />
+        <br />
+        <br />
+        <p>Please do not reply to this email</p>
     </div>
 );
 

@@ -13,7 +13,6 @@ export async function POST(request:Request, res:Response) {
     const { data, error } = await resend.emails.send({
       from: 'Veca Vision Media <noreply@resend.dev>',
       to: 'billyc.wood4@gmail.com',
-      cc: 'veca.vision@gmail.com',
       subject: 'New Contact Request from ' + fname + ' ' + lname + '!',
       react: EmailTemplate({ fname, lname, email, phone, org, message }),
     });

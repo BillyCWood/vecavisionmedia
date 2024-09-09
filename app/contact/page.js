@@ -28,12 +28,12 @@ export default function Contact(){
             email, 
             phone, 
             org, 
-            message 
+            message,
         };
 
         console.log(data);
 
-        const res = await fetch( "/api/send", { method: "POST", body: JSON.stringify(data) });
+        const res = await fetch( "/api/send", { method: "POST", headers:{'Content-Type': 'application/json',}, body: JSON.stringify(data), });
         
         console.log(res.status);
 

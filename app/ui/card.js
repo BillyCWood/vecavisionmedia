@@ -1,9 +1,9 @@
-export default function Card(props) {
+export default function Card({icon, text, bgcolor, textcolor, customstyles}) {
     
     return(
-        <div className="text-[#000] bg-[#fff] w-32 h-24 rounded-lg flex flex-col justify-center">
-            <div className="block ml-auto mr-auto">{props.icon}</div>
-            <p>{props.text}</p>
+        <div className={`${customstyles} ${textcolor} ${bgcolor} w-52 h-40 rounded-lg flex flex-col justify-center px-2`}>
+            <div className="block ml-auto mr-auto">{icon}</div>
+            <p>{text}</p>
         </div>
     );
 }
