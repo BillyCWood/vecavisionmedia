@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         
         <div className="flex flex-col min-h-screen justify-between">
-          <header className="sticky top-0">
+          <header className="sticky top-0 z-10">
             <Nav />  
           </header>
           
