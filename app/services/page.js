@@ -23,7 +23,7 @@ export default function Services(){
                 
                 <FontAwesomeIcon icon="fa-solid fa-clapperboard" style={{color: "#63E6BE",}} />
                 <div className='grid place-items-center mt-10 m-auto
-                                min-[600px]:grid-rows-6 min-[600px]:grid-cols-2 min-[600px]:gap-y-6 min-[600px]:w-50%
+                                min-[350px]:grid-rows-6 min-[350px]:grid-cols-2 min-[350px]:gap-y-6 min-[400px]:w-4/5
                                 lg:w-1/2
                                 xl:grid-rows-3 xl:grid-cols-4 xl:gap-y-6 xl:gap-x-56 xl:w-1/2
                                 2xl:w-1/3'
@@ -117,8 +117,9 @@ export default function Services(){
                 <h2 className='font-bold text-2xl mb-4'>Add-Ons</h2>
                 <p>Maximize the impact of your project with these valuable add-ons and more</p>
                 <div className='grid m-auto place-items-center mt-10 gap-y-6
-                                min-[600px]:grid-rows-5 min-[600px]:grid-cols-2 min-[600px]:gap-x-1 min-[600px]:w-50%
-                                lg:w-1/2 lg:grid-rows-4 lg:grid-cols-3 lg:gap-x-12
+                                min-[350px]:grid-rows-5 min-[350px]:grid-cols-2 min-[350px]:gap-x-1 min-[350px]:w-4/5
+                                lg:grid-rows-4 lg:grid-cols-3 lg:gap-x-12
+                                xl:w-1/2
                                 2xl:grid-rows-2 2xl:grid-cols-5 2xl:gap-x-56'
                 >
                     
