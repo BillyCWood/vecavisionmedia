@@ -60,7 +60,7 @@ export default function Contact(){
             <Image src="/VVM-images/Veca-Vision.png" width={150} height={1} className="mx-auto" />
             <div className="flex justify-center">
                 <p className="text-center">Videography Business in Bozeman, MT.</p>
-                <img src="https://em-content.zobj.net/source/apple/76/round-pushpin_1f4cd.png" width={25} height={1} />
+                <p><img src="https://em-content.zobj.net/source/apple/76/round-pushpin_1f4cd.png" width={25} height={1} /></p>
             </div>
             <p className="text-center mt-8">Email: veca.vision@gmail.com</p>
             <p className="text-center mt-3">Phone: (406) 595-6899</p>

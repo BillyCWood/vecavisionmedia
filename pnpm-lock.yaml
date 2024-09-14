@@ -32,6 +32,9 @@ importers:
       next:
         specifier: 14.2.5
         version: 14.2.5(@babel/core@7.24.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      next-file:
+        specifier: ^1.0.5
+        version: 1.0.5
       react:
         specifier: ^18
         version: 18.3.1
@@ -1103,6 +1106,9 @@ packages:
   negotiator@0.6.3:
     resolution: {integrity: sha512-+EUsqGPLsM+j/zdChZjsnX51g4XrHFOIXwfnCVPGlQk/k5giakcKsuxCObBRu6DSm9opw/O6slWbJdghQM4bBg==}
     engines: {node: '>= 0.6'}
+
+  next-file@1.0.5:
+    resolution: {integrity: sha512-pS8/Vry7I12KgiJ26UboPmGcnIZG7BqSj0RIn19zqHB0k53VXdG+qySENb7BkzmfksrRpTjXU/lkRrRb9qY4xg==}
 
   next@14.2.3:
     resolution: {integrity: sha512-dowFkFTR8v79NPJO4QsBUtxv0g9BrS/phluVpMAt2ku7H+cbcBJlopXjkWlwxrk/xGqMemr7JkGPGemPrLLX7A==}
@@ -2422,6 +2428,8 @@ snapshots:
   nanoid@3.3.7: {}
 
   negotiator@0.6.3: {}
+
+  next-file@1.0.5: {}
 
   next@14.2.3(@babel/core@7.24.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
