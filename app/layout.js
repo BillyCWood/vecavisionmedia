@@ -3,13 +3,8 @@ import "./globals.css";
 
 
 import Nav from "./ui/nav";
+import Foot from "./ui/foot"
 
-import '@fortawesome/fontawesome-svg-core/styles.css'
-import { config } from '@fortawesome/fontawesome-svg-core'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-config.autoAddCss = false
-
-import { faInstagram, faFacebook, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-icons'
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -40,25 +35,8 @@ export default function RootLayout({ children }) {
           
           <footer className="relative border-t border-white pt-3 pb-2">
 
-            <div className="flex justify-evenly">
-              <div>
-                Follow Us
-                <div className="space-x-4">
-                  <a href='https://www.facebook.com/VecaMedia' target='_blank' rel='noopener noreferrer' ><FontAwesomeIcon icon={faFacebook} className="hover:text-vvm-teal hover:cursor-pointer" /></a>
-                  <a href='https://www.instagram.com/vecavisionmedia/' target='_blank' rel='noopener noreferrer' ><FontAwesomeIcon icon={faInstagram} className="hover:text-vvm-lightblue hover:cursor-pointer" /></a>
-                  <a href='https://www.linkedin.com/in/jaiden-veca-0a71b6292/' target='_blank' rel='noopener noreferrer' ><FontAwesomeIcon icon={faLinkedin} className="hover:text-vvm-blue hover:cursor-pointer" /></a>
-                  <a href='https://www.youtube.com/channel/UC59xCCLBkobyj5wyEphwQmg' target='_blank' rel='noopener noreferrer' ><FontAwesomeIcon icon={faYoutube} className="hover:text-vvm-pink hover:cursor-pointer" /></a>
-                </div>
-              </div>
-              <div>
-                Subscribe
-              </div>
-              <div>
-                Contact US
-                <div className="font-thin">(406)595-6899</div>
-                <div className="font-thin">veca.vision@gmail.com</div>
-              </div>
-            </div>
+            <Foot />
+
             <div className="mt-3 font-thin text-xs flex justify-evenly">Copyright &copy; 2024 Veca Vision Media - All Rights Reserved.</div>
 
 

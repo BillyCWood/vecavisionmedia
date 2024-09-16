@@ -4,10 +4,10 @@ import Button from "./ui/button";
 export default function Home() {
   return (
     
-    <main className="flex flex-col w-screen h-screen scroll-smooth overflow-y-scroll snap-mandatory snap-y">
+    <main className="flex flex-col w-screen h-screen scroll-smooth overflow-y-scroll snap-mandatory snap-y text-[#fff]">
       
         
-      <div className="snap-always snap-center min-h-screen bg-center bg-no-repeat bg-cover justify-center pt-16" style={{backgroundImage: "url('/images/robert-shunev-unsplash.png')"}}>
+      <div className="snap-always snap-center min-h-screen bg-[#000] bg-center bg-no-repeat bg-cover justify-center pt-16" style={{backgroundImage: "url('/images/robert-shunev-unsplash.png')"}}>
         <div className="flex flex-col items-center gap-y-2 px-6 text-center">
           <h1 className="font-bold text-2xl">Bringing your vision to life, one frame at a time</h1>
           <p className="mb-6">74% of consumers share video content from businesses on social media. We can help you create impressive video content to grow your business and give customers the desire to have your produect or service.</p>
