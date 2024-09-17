@@ -12,7 +12,7 @@ config.autoAddCss = false
 
 export default function Services(){
     return (
-        <main className="pt-10 pb-10 text-center">
+        <main className="pt-10 pb-10 text-center bg-[#000]">
             <div className="flex flex-col border-b mb-6 pb-6 border-vvm-teal items-center">
                 <h2 className='font-bold text-2xl mb-4'>Recurring Content Plan</h2>
                 <p className='mb-4 px-14'>Levarage a curated monthly marketing plan, tailored to your brand, to consistently engage your audience and drive result.</p>

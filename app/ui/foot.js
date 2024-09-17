@@ -9,7 +9,7 @@ import { faInstagram, faFacebook, faLinkedin, faYoutube } from '@fortawesome/fre
 
 export default function Foot() {
     return (
-        <div className="flex flex-col gap-y-5 md:gap-y-0 md:flex-row justify-evenly ml-10">
+        <div className="flex flex-col gap-y-5 md:gap-y-0 md:flex-row justify-evenly ml-10 bg-[#000]">
             <div className=''>
                 Follow Us
                 <div className="space-x-4">

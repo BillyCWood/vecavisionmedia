@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
 
       <head><meta name="viewport" content="width=device-width, initial-scale=1.0"></meta></head>
 
-      <body className={inter.className}>
+      <body className={`${inter.className} text-[#fff]`}>
         
         <div className="flex flex-col min-h-screen justify-between">
           <header className="sticky top-0 z-10">
@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
           </div>
           
           
-          <footer className="relative border-t border-white pt-3 pb-2">
+          <footer className="relative border-t border-white pt-3 pb-2 bg-[#000]">
 
             <Foot />
 

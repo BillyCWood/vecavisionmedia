@@ -4,7 +4,7 @@
 
 export default function About(){
     return (
-        <main className="text-center">
+        <main className="text-center bg-[#000]">
 
             <div className="pt-10 pb-10 border-b border-vvm-teal">
                 <h2 className="font-bold text-2xl">Our Purpose</h2>
