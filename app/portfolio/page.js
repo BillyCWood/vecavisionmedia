@@ -5,7 +5,7 @@ export default function Portfolio(){
 
 
     return (
-        <main className="flex flex-col min-h-screen items-center text-center pt-10 pb-10 bg-gradient-to-b from-vvm-pink to-vvm-blue">
+        <main className="flex flex-col min-h-screen items-center text-center pt-10 pb-10 bg-cover bg-no-repeat bg-center" style={{backgroundImage: "url('/VVM-bg-images/adrien-olichon-X8o-P23flgI-unsplash.jpg')"}}>
             
             <h1 className="font-extrabold text-2xl mb-10">Get a Closer Look into our Vision</h1>
 
