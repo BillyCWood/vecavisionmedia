@@ -1,5 +1,4 @@
 import Video from '../ui/video.js';
-import VideoSelf from '../ui/videoSelf.js';
 import { videos } from '../../utils/constants';
 
 export default function Portfolio(){
