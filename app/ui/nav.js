@@ -31,7 +31,7 @@ export default function Nav() {
                 </Link>
                 <button className={`${ isOpen ? 'space-y-0 content-center' : 'space-y-2 content-center' } `} onClick={ () => setIsOpen(!isOpen) }>
                     <span className={ `block w-6 border-b ${ isOpen ? 'rotate-45 duration-500' : 'rotate-0 duration-500' } `} />
-                    <span className={ `block w-6 border-b ${ isOpen ? '-rotate-45 duration-500' : 'rotate-0 duration-500' } `} />
+                    <span className={ `block w-6 border-b ${ isOpen ? '-rotate-45 duration-500 -translate-y-px' : 'rotate-0 duration-500' } `} />
                 </button>
             </div>
             <div className={ `lg:hidden w-screen float-right bg-[#000] ${ isOpen ? 'flex flex-col' : 'hidden' }` }>
