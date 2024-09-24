@@ -1,5 +1,4 @@
 "use client";
-import { exit } from "process";
 import { useEffect } from "react";
 import { useState } from "react";
 
@@ -8,11 +7,12 @@ export default function Video({title, thumbnail, src, description, ifFade}) {
     const [isVisible, setIsVisible] = useState('hidden');
 
 
-    const video = document.querySelector('video');
     
     function togglePlay() {
-        useEffect(() => {video.pause();} , [])
-        
+        useEffect(() => {
+            const video = document.querySelector('video');
+            video.pause();
+        } , [])
         setIsVisible('hidden')
     }
 
