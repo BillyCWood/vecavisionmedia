@@ -1,19 +1,14 @@
 "use client";
-
-import { list } from "postcss";
-import React from "react";
 import { useState } from "react";
-import { forEachChild } from "typescript";
 
-export default function Video({ key, title, thumbnail, src, description, ifFade }) {
+export default function Video({ title, thumbnail, src, description, ifFade }) {
 
 
 
     const [isVisible, setIsVisible] = useState('hidden');
 
-    const videoList = document.querySelectorAll("video");
 
-    const pauseVideos = () => {
+    const pauseVideos = (videoList) => {
         for(let i = 0; i < videoList.length; i++){
             videoList[i].pause();
         }
@@ -30,7 +25,7 @@ export default function Video({ key, title, thumbnail, src, description, ifFade 
         
             <div className={`${isVisible} w-full h-screen left-0 top-14 pt-60 px-4 bg-custom-gray bg-opacity-85 z-10`}>
                 <div className="flex flex-col gap-y-6 w-2/3 mx-auto md:-translate-y-24">
-                    <div className="hover:cursor-pointer ml-auto float-right" onClick={() => {pauseVideos(); setIsVisible('hidden')}}>
+                    <div className="hover:cursor-pointer ml-auto float-right" onClick={() => {const videos = document.querySelectorAll("video"); pauseVideos(videos); setIsVisible('hidden')}}>
                         <span className="block w-6 border-b-2 rotate-45" />
                         <span className="block w-6 border-b-2 -rotate-45 -translate-y-0.5" />
                     </div>
