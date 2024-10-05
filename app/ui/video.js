@@ -24,7 +24,7 @@ export default function Video({ title, thumbnail, src, description, ifFade }) {
             </div>
         
             <div className={`${isVisible} w-full h-screen left-0 top-14 pt-60 px-4 bg-custom-gray bg-opacity-85 z-10`}>
-                <div className="flex flex-col gap-y-6 w-2/3 mx-auto md:-translate-y-24">
+                <div className="flex flex-col gap-y-6 w-2/3 mx-auto -translate-y-36">
                     <div className="hover:cursor-pointer ml-auto float-right" onClick={() => {const videos = document.querySelectorAll("video"); pauseVideos(videos); setIsVisible('hidden')}}>
                         <span className="block w-6 border-b-2 rotate-45" />
                         <span className="block w-6 border-b-2 -rotate-45 -translate-y-0.5" />
