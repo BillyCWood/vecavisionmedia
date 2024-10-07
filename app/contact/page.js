@@ -55,7 +55,7 @@ export default function Contact(){
 
 
     return (
-        <main className="pt-10 pb-10 bg-[#000]">
+        <main className="pt-10 pb-10 bg-[#000] bg-cover bg-no-repeat bg-center" style={{backgroundImage:"url('/VVM-bg-images/pawel-czerwinski-Uvl9d54tqpQ-unsplash.jpg')"}}>
             <h2 className="font-bold text-xl text-center">Contact Veca Vision Media</h2>
             <Image src="/VVM-images/Veca-Vision.png" width={150} height={1} className="mx-auto" />
             <div className="flex justify-center">
