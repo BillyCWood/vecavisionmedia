@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Button from "./ui/button";
-import Carousel from "./ui/carousel";
 
 export default function Home() {
   return (
