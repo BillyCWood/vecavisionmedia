@@ -33,7 +33,7 @@ export const videos = [
         src: '/videos/Daves Sushi Promo Final (MP4).mp4',
         title: "Dave's Sushi",
         thumbnail: '/thumbnails/DavesSushiThumbnail.jpg',
-        description: "",
+        description: "If you're looking for plush modern trimmings and post-modern art hanging on the walls, this ain't your place. Experience the amazingly fresh sushi and friendly atmosphere modeled after the 'hang-loose' style of Hawaii.",
         featured: false,
     },
     {
@@ -41,7 +41,7 @@ export const videos = [
         src: '/videos/3126 Savannah FINAL Directors Cut (MP4).mp4',
         title: "Savage Real Estate Group",
         thumbnail: '/thumbnails/SavageThumbnail.jpg',
-        description: "",
+        description: "Working with an inexperienced agent who isn’t putting your needs first can cost you. The agents at Savage Real Estate Group have helped many clients buy or sell homes in the Gallatin Valley.",
         featured: false,
     },
 ];

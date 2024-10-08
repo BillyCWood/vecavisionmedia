@@ -15,6 +15,7 @@
 
 # production
 /build
+/app/testing
 
 # misc
 .DS_Store
