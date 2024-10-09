@@ -16,6 +16,8 @@ export default function Button(props){
             hover:bg-vvm-pink 
             hover:cursor-pointer
             hover:pr-5"
+            aria-hidden={false}
+            aria-label="button"
             >
 
                 <span className="inline-block relative after:content-['\00BB'] after:text-vvm-lightblue after:absolute after:-right-5 after:opacity-0 after:group-hover:opacity-100 after:ease-in-out after:duration-300">{props.text}</span>

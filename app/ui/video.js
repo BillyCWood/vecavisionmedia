@@ -1,9 +1,10 @@
 "use client";
 import { useState } from "react";
+import Image from "next/image";
 import { CldVideoPlayer } from 'next-cloudinary';
 import 'next-cloudinary/dist/cld-video-player.css';
 
-export default function Video({ title, thumbnail, src, description, ifFade }) {
+export default function Video({ title, thumbnail, src, description, alt, ifFade }) {
 
 
 
@@ -21,7 +22,7 @@ export default function Video({ title, thumbnail, src, description, ifFade }) {
         <div className="mb-10">
             <h1 className="text-xl font-bold mb-2">{title}</h1>
             <div className="group rounded-2xl grid place-items-center [grid-template-areas:'stack'] overflow-hidden bg-vvm-pink max-h-[700px]" onClick={() => setIsVisible('fixed')}>
-                <img className={`rounded-2xl aspect-auto ${ifFade ? 'group-hover:opacity-60' : '' } ease-in-out duration-200 group-hover:cursor-pointer [grid-area:stack] object-cover`} width={"100%"} height={"100%"} src={thumbnail} />
+                <Image className={`rounded-2xl aspect-auto ${ifFade ? 'group-hover:opacity-45' : '' } ease-in-out duration-200 group-hover:cursor-pointer [grid-area:stack] object-contain`} width={1920} height={1080} src={thumbnail} alt={alt} />
                 <p className="hidden lg:block opacity-0 group-hover:opacity-100 group-hover:z-10 ease-in-out duration-200 px-6 [grid-area:stack]">{description}</p>
             </div>
         
@@ -40,7 +41,8 @@ export default function Video({ title, thumbnail, src, description, ifFade }) {
                             </video>
                             */
                         }
-                        <CldVideoPlayer 
+                        <CldVideoPlayer
+                            id={title}
                             width="1920"
                             height="1080"
                             src={src}

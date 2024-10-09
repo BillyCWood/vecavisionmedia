@@ -4,7 +4,7 @@
 
 export default function About(){
     return (
-        <main className="text-center bg-[#000]">
+        <main className="text-center bg-[#000] bg-cover bg-no-repeat bg-center" style={{backgroundImage: "url('/VVM-bg-images/adrien-olichon-X8o-P23flgI-unsplash.jpg')"}}>
 
             <div className="pt-10 pb-10 border-b border-vvm-teal">
                 <h2 className="font-bold text-2xl">Our Purpose</h2>

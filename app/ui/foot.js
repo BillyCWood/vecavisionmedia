@@ -13,10 +13,10 @@ export default function Foot() {
             <div className=''>
                 Follow Us
                 <div className="space-x-4">
-                    <a href='https://www.facebook.com/VecaMedia' target='_blank' rel='noopener noreferrer' ><FontAwesomeIcon icon={faFacebook} className="hover:text-vvm-teal hover:cursor-pointer" /></a>
-                    <a href='https://www.instagram.com/vecavisionmedia/' target='_blank' rel='noopener noreferrer' ><FontAwesomeIcon icon={faInstagram} className="hover:text-vvm-lightblue hover:cursor-pointer" /></a>
-                    <a href='https://www.linkedin.com/in/jaiden-veca-0a71b6292/' target='_blank' rel='noopener noreferrer' ><FontAwesomeIcon icon={faLinkedin} className="hover:text-vvm-blue hover:cursor-pointer" /></a>
-                    <a href='https://www.youtube.com/channel/UC59xCCLBkobyj5wyEphwQmg' target='_blank' rel='noopener noreferrer' ><FontAwesomeIcon icon={faYoutube} className="hover:text-vvm-pink hover:cursor-pointer" /></a>
+                    <a href='https://www.facebook.com/VecaMedia' target='_blank' rel='noopener noreferrer' ><FontAwesomeIcon icon={faFacebook} aria-hidden={false} aria-label='Veca Vision Facebook' className="hover:text-vvm-teal hover:cursor-pointer" /></a>
+                    <a href='https://www.instagram.com/vecavisionmedia/' target='_blank' rel='noopener noreferrer' ><FontAwesomeIcon icon={faInstagram} aria-hidden={false} aria-label='Veca Vision Instagram' className="hover:text-vvm-lightblue hover:cursor-pointer" /></a>
+                    <a href='https://www.linkedin.com/in/jaiden-veca-0a71b6292/' target='_blank' rel='noopener noreferrer' ><FontAwesomeIcon icon={faLinkedin} aria-hidden={false} aria-label='Veca Vision Linkedin' className="hover:text-vvm-blue hover:cursor-pointer" /></a>
+                    <a href='https://www.youtube.com/channel/UC59xCCLBkobyj5wyEphwQmg' target='_blank' rel='noopener noreferrer' ><FontAwesomeIcon icon={faYoutube} aria-hidden={false} aria-label='Veca Vision Youtube' className="hover:text-vvm-pink hover:cursor-pointer" /></a>
                 </div>
             </div>
             <div>

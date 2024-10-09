@@ -14,7 +14,7 @@ export default function Nav() {
         <div>
             <div className="hidden z-20 lg:flex bg-[#000] border-b border-white justify-evenly items-center lg:px-24 xl:px-72">
                 <Link href="/" className="group flex items-center">
-                    <Image src="/VVM-images/Veca-Vision2.png" alt="/" width={75} height={75} className="m-0 p-0 group-hover:grayscale group-hover:ease-in-out group-hover:duration-300" />
+                    <Image src="/VVM-images/Veca-Vision2.png" alt="logo" width={75} height={75} className="m-0 p-0 group-hover:grayscale group-hover:ease-in-out group-hover:duration-300" />
                     <p className="group-hover:text-vvm-lightblue  group-hover:ease-in-out group-hover:duration-300" >Veca Vision Media</p>
                 </Link>
                 
@@ -27,7 +27,7 @@ export default function Nav() {
             </div>
             <div className="flex lg:hidden z-20 sticky top-0 bg-[#000] border-b border-white px-6 justify-between">
                 <Link href="/" className="flex items-center ease-in-out duration-300">
-                    <Image src="/VVM-images/Veca-Vision2.png" alt="/" width={75} height={75} className="m-0 p-0" />
+                    <Image src="/VVM-images/Veca-Vision2.png" alt="logo" width={75} height={75} className="m-0 p-0" />
                 </Link>
                 <button className={`${ isOpen ? 'space-y-0 content-center' : 'space-y-2 content-center' } `} onClick={ () => setIsOpen(!isOpen) }>
                     <span className={ `block w-6 border-b ${ isOpen ? 'rotate-45 duration-500' : 'rotate-0 duration-500' } `} />
