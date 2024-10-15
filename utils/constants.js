@@ -70,6 +70,15 @@ const CasaGrandeRealEstate_2981FenWay = {
     description: "Working for you Sign Up to Sign Down. Casa Grande Real Estate helps friends and clients buy and sell real estate. Se habla español.",
 };
 
+const MontanaFence = {
+    id: 7,
+    src: 'MontanaFenceVideo_fclvlt',
+    title: "Montana Fence",
+    thumbnail: '/thumbnails/MontanaFence.jpg',
+    thumbnailAltText: "Montana Fence Thumbnail",
+    description: "Premier Fencing, Locally Owned. Providing fence installation, repair, and retail to Montanan families for over 40 years.",
+};
+
 
 // --EXPORTING VIDEOS--
 
@@ -78,7 +87,7 @@ export const videos = [
     JackDaniel,
     SpecialK,
     DavesSushi,
-    OnoRoller,
+    MontanaFence,
     SavageRealEstate_3126Savannah,
     CasaGrandeRealEstate_2981FenWay,
 ];
