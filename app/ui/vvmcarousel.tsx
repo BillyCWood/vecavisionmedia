@@ -43,21 +43,25 @@ const VVMCarousel = () => {
         </div>
       </div>
       
-      <div className='mt-4'>
+      <div className='mt-4 flex h-14 justify-between'>
 
-        <button className="embla__prev flex" aria-hidden={false} aria-label='video carousel previous button' onClick={scrollPrev}>
-          <div>
-            <span className='block border-b-4 w-6 -rotate-45 border-white rounded-tr-lg' />
-            <span className='block border-b-4 w-6 rotate-45 translate-y-[10px] border-white rounded-br-lg' />
+        <button className="embla__prev hover:bg-custom-gray hover:opacity-65 rounded-xl" aria-hidden={false} aria-label='video carousel previous button' onClick={scrollPrev}>
+          <div className='flex'>
+            <div className='flex flex-col'>
+              <span className='border-b-4 border-white w-6 rounded-br-full max-h-0 -rotate-45 -translate-y-[6px]'/>
+              <span className='border-b-4 border-white w-6 rounded-br-full max-h-0 rotate-45 translate-y-[6px]'/>
+            </div>
+            <span className='border-b-4 border-white w-10 rounded-full max-h-0 translate-y-[2px] -translate-x-[18px]'/>
           </div>
-          <span className='block border-b-4 w-8 translate-y-[7px] -translate-x-4 border-vvm-white rounded-2xl' />
         </button>
         
-        <button className="embla__next rotate-180 translate-y-[3px] float-right" aria-label='video carousel next button' onClick={scrollNext}>
-          <span className='block border-b-4 w-8 translate-y-[11px] translate-x-2 border-vvm-white rounded-2xl' />
-          <div>
-            <span className='block border-b-4 w-6 -rotate-45 border-white rounded-tr-lg' />
-            <span className='block border-b-4 w-6 rotate-45 translate-y-[10px] border-white rounded-br-lg' />
+        <button className="embla__next hover:bg-custom-gray hover:opacity-65 rounded-xl rotate-180" aria-label='video carousel next button' onClick={scrollNext}>
+        <div className='flex'>
+            <div className='flex flex-col'>
+              <span className='border-b-4 border-white w-6 rounded-br-full max-h-0 -rotate-45 -translate-y-[6px]'/>
+              <span className='border-b-4 border-white w-6 rounded-br-full max-h-0 rotate-45 translate-y-[6px]'/>
+            </div>
+            <span className='border-b-4 border-white w-10 rounded-full max-h-0 translate-y-[2px] -translate-x-[18px]'/>
           </div>
         </button>
       </div>
