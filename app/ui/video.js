@@ -21,7 +21,7 @@ export default function Video({ title, thumbnail, src, description, alt, ifFade 
     return(
         <div className="mb-10">
             <h1 className="text-xl font-bold mb-2">{title}</h1>
-            <div className="group rounded-2xl grid place-items-center [grid-template-areas:'stack'] overflow-hidden bg-vvm-pink max-h-[700px]" onClick={() => setIsVisible('fixed')}>
+            <div className="group rounded-2xl grid place-items-center [grid-template-areas:'stack'] overflow-hidden max-h-[720px] bg-vvm-pink" onClick={() => setIsVisible('fixed')}>
                 <Image className={`rounded-2xl aspect-auto ${ifFade ? 'group-hover:opacity-45' : '' } ease-in-out duration-200 group-hover:cursor-pointer [grid-area:stack] object-contain`} width={1920} height={1080} src={thumbnail} alt={alt} />
                 <p className="hidden lg:block opacity-0 group-hover:opacity-100 group-hover:z-10 ease-in-out duration-200 px-6 [grid-area:stack]">{description}</p>
             </div>
@@ -33,14 +33,6 @@ export default function Video({ title, thumbnail, src, description, alt, ifFade 
                         <span className="block w-6 border-b-2 -rotate-45 -translate-y-0.5" />
                     </div>
                     
-                        {
-                            /*<iframe className={`rounded-2xl aspect-video`} src={src} title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" referrerpolicy="strict-origin-when-cross-origin"></iframe>*\
-                            <video id="video" className={`${title.replace(/'+/g).trim()} rounded-2xl aspect-video`} width="" height="" controls preload="none">
-                            <source src={src} type="video/mp4" />
-                            Your browser does not support the video tag.
-                            </video>
-                            */
-                        }
                         <CldVideoPlayer
                             id={title}
                             width="1920"
@@ -49,7 +41,6 @@ export default function Video({ title, thumbnail, src, description, alt, ifFade 
                             className="rounded-2xl"
                         />
                         
-                    
                 </div>
             </div>
         
