@@ -35,8 +35,8 @@ const VVMCarousel = () => {
         <div className="embla__container">
           {
             featuredVideos.map((vid, index) => (
-              <div className='embla__slide' key={index}>
-                <CldVideoPlayer id={vid.title} width={'1920'} height={'1080'} src={vid.src} poster={vid.cloudinaryThumbnail} className='rounded-2xl' />
+              <div className='embla__slide border__gradient' key={index}>
+                <CldVideoPlayer id={vid.title} width={'1920'} height={'1080'} src={vid.src} poster={vid.cloudinaryThumbnail} className='' />
               </div>
             ))
           }

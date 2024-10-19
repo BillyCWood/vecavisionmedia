@@ -59,9 +59,9 @@ export default function Home() {
           <Link href="/portfolio"><Button text="View the Vision" /></Link>
         </div>
 
-        <div className="min-w-screen flex mt-24 ">
+        <div className="min-w-screen flex mt-20">
           
-          <div className="w-4/5 lg:w-3/5 mx-auto">
+          <div className="w-4/5 lg:w-1/2 mx-auto">
             <VVMCarousel />
           </div>
 

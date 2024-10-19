@@ -19,6 +19,13 @@
   min-width: 0;
 }
 
+.border__gradient {
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  border-image: linear-gradient(to bottom right, #03fcca, #0384fc, #ac00e6);
+  border-image-slice: 1;
+}
+
 
 @media (prefers-color-scheme: dark) {
   :root {
