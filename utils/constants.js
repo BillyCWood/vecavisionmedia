@@ -3,6 +3,7 @@
 /*
     const <name> =  {
         id: 0,
+        category: '',
         src: '',
         title: "",
         thumbnail: '',
@@ -17,6 +18,7 @@ import { cloudinaryLoader } from "next-cloudinary";
 // --VIDEO OBJECTS--
 const JackDaniel = {
     id: 1,
+    category: 'product',
     //src: '/videos/Jack Spec Ad (for portfolio).mp4',
     src: 'Jack_Spec_Ad_for_portfolio_g1z3vf',
     title: "Jack Daniel's Tennessee Honey",
@@ -28,6 +30,7 @@ const JackDaniel = {
 
 const SpecialK = {
     id: 2,
+    category: 'product',
     //src: '/videos/MP4 version of final special K ad.mp4',
     src:'MP4_version_of_final_special_K_ad_nicmg6',
     title: "Kellog's Special",
@@ -39,6 +42,7 @@ const SpecialK = {
 
 const DavesSushi = {
     id: 3,
+    category: 'food',
     //src: '/videos/Daves Sushi Promo Final (MP4).mp4',
     src:'Daves_Sushi_Promo_Final_MP4_xei5wu',
     title: "Dave's Sushi",
@@ -50,6 +54,7 @@ const DavesSushi = {
 
 const OnoRoller = {
     id: 4,
+    category: 'product',
     src: 'ONO_roller_final_MP4_zrbpnz',
     title: "ONO Roller",
     thumbnail: '/thumbnails/onoroller.png',
@@ -60,6 +65,7 @@ const OnoRoller = {
 
 const SavageRealEstate_3126Savannah = {
     id: 5,
+    category: 'real estate',
     //src: '/videos/3126 Savannah FINAL Directors Cut (MP4).mp4',
     src:'3126_Savannah_FINAL_Directors_Cut_MP4_ptdari',
     title: "Savage Real Estate Group",
@@ -71,6 +77,7 @@ const SavageRealEstate_3126Savannah = {
 
 const CasaGrandeRealEstate_2981FenWay = {
     id: 6,
+    category: 'real estate',
     src: '2981_Fen_Way_FINAL_MP4_xh5ypk',
     title: "Casa Grande Real Estate",
     thumbnail: '/thumbnails/2981FenWay.png',
@@ -81,6 +88,7 @@ const CasaGrandeRealEstate_2981FenWay = {
 
 const MontanaFence = {
     id: 7,
+    category: 'promotional',
     src: 'MontanaFenceVideo_fclvlt',
     title: "Montana Fence",
     thumbnail: '/thumbnails/MontanaFenceThumbnail.jpg',

@@ -14,13 +14,10 @@ export default function Portfolio(){
 
             <div className="grid grid-cols-1 px-10 lg:grid-cols-2 gap-x-6 h-full">
                 
-                {videos.map((vid, index) => (
-                    <Video key={index} title={vid.title} thumbnail={vid.thumbnail} src={vid.src} description={vid.description} alt={vid.thumbnailAltText} ifFade={true} />
-                ))
-
-                //<Video title={videos[0].title} thumbnail={videos[0].thumbnail} src={videos[0].src} description={videos[0].description} ifFade={true} />
-
-                //<Video title={videos[1].title} thumbnail={videos[1].thumbnail} src={videos[1].src} description={videos[1].description} ifFade={true} />
+                {
+                    videos.map((vid, index) => (
+                        <Video key={index} title={vid.title} thumbnail={vid.thumbnail} src={vid.src} description={vid.description} alt={vid.thumbnailAltText} ifFade={true} />
+                    ))
                 }
             </div>
 

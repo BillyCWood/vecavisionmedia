@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
             <Nav />  
           </header>
           
-          <div className="mb-auto overflow-x-hidden">
+          <div className="mb-auto overflow-hidden">
             {children}
           </div>
           
