@@ -16,16 +16,16 @@ export default function Services(){
         <main className="pt-10 pb-10 text-center relative bg-[#000]">
             {/* <Image src={'/VVM-bg-images/adrien-olichon-X8o-P23flgI-unsplash.jpg'} alt="background image" style={{objectFit:'cover'}} className='-z-10' fill priority /> */}
             <div className='z-0'>
-            <div className="flex flex-col border-b mb-6 pb-6 border-vvm-teal items-center">
-                <h2 className='font-bold text-2xl mb-4'>Recurring Content Plan</h2>
-                <p className='mb-4 px-14'>Levarage a curated monthly marketing plan, tailored to your brand, to consistently engage your audience and drive result.</p>
+            <div className="flex flex-col border-b mb-10 pb-6 border-vvm-teal items-center">
+                <h2 className='font-bold text-2xl mb-2 text-vvm-lightblue'>Recurring Content Plan</h2>
+                <p className='px-14 text-lg mb-6'>Leverage a curated monthly marketing plan, tailored to your brand, to consistently engage your audience and drive result.</p>
                 <Link href={"/contact"}><Button text="Schedule a Chat" /></Link>
             </div>
-            <div className="border-b mb-6 pb-6 border-vvm-blue">
-                <h2 className='font-bold text-2xl'>Videography</h2>
+            <div className="border-b mb-10 pb-6 border-vvm-blue">
+                <h2 className='font-bold text-2xl text-vvm-lightblue'>Videography</h2>
                 
                 <FontAwesomeIcon icon="fa-solid fa-clapperboard" style={{color: "#63E6BE",}} />
-                <div className='grid place-items-center mt-10 m-auto
+                <div className='grid place-items-center mt-8 mb-6 m-auto
                                 min-[350px]:grid-rows-6 min-[350px]:grid-cols-2 min-[350px]:gap-y-6 min-[400px]:w-4/5
                                 lg:w-1/2
                                 xl:grid-rows-3 xl:grid-cols-4 xl:gap-y-6 xl:gap-x-56 xl:w-1/2
@@ -55,7 +55,7 @@ export default function Services(){
                     <div className='group relative' id='hype'>
                         <Card icon={<svg xmlns="http://www.w3.org/2000/svg" height={20} viewBox="0 0 448 512"><path fill='#000' d="M349.4 44.6c5.9-13.7 1.5-29.7-10.6-38.5s-28.6-8-39.9 1.8l-256 224c-10 8.8-13.6 22.9-8.9 35.3S50.7 288 64 288l111.5 0L98.6 467.4c-5.9 13.7-1.5 29.7 10.6 38.5s28.6 8 39.9-1.8l256-224c10-8.8 13.6-22.9 8.9-35.3s-16.6-20.7-30-20.7l-111.5 0L349.4 44.6z"/></svg>}
                             text="Hype" bgcolor="bg-[#fff]" textcolor="text-[#000]" customstyles="absolute group-hover:invisible group-hover:h-0 duration-100" />
-                        <Card text="High-energy videos designed to build excitement around events, launches, or product / services"
+                        <Card text="High-energy videos designed to build excitement around events, launches, or products / services"
                             bgcolor="bg-[#1d4ed8]" textcolor="text-[#fff]" customstyles="h-0 invisible overflow-y-hidden md:group-hover:h-40 md:group-hover:w-52 group-hover:visible min-[350px]:group-hover:w-40 min-[350px]:group-hover:h-52 duration-100"/>
                     </div>
 
@@ -109,7 +109,7 @@ export default function Services(){
                     </div>
 
                     <div className='group relative' id='everything'>
-                        <Card text="Everything in bewtween!" bgcolor="bg-[#fff]" textcolor="text-[#000]" customstyles="absolute group-hover:invisible group-hover:h-0 duration-100" />
+                        <Card text="Everything in between!" bgcolor="bg-[#fff]" textcolor="text-[#000]" customstyles="absolute group-hover:invisible group-hover:h-0 duration-100" />
                         <Card text="Versatile video solutions for any need that doesn’t fit into a traditional category, bringing your unique ideas to life"
                             bgcolor="bg-[#1d4ed8]" textcolor="text-[#fff]" customstyles="h-0 invisible overflow-y-hidden md:group-hover:h-40 md:group-hover:w-52 group-hover:visible min-[350px]:group-hover:w-40 min-[350px]:group-hover:h-52 duration-100" />
                     </div>
@@ -117,9 +117,9 @@ export default function Services(){
             </div> 
 
             <div className="border-b mb-6 pb-6 border-vvm-pink">
-                <h2 className='font-bold text-2xl mb-4'>Add-Ons</h2>
-                <p>Maximize the impact of your project with these valuable add-ons and more</p>
-                <div className='grid m-auto place-items-center mt-10 gap-y-6
+                <h2 className='font-bold text-2xl mb-2 text-vvm-lightblue'>Add-Ons</h2>
+                <p className='text-lg'>Maximize the impact of your project with these valuable add-ons and more</p>
+                <div className='grid m-auto place-items-center mt-12 gap-y-6
                                 min-[350px]:grid-rows-5 min-[350px]:grid-cols-2 min-[350px]:gap-x-1 min-[350px]:w-4/5
                                 lg:grid-rows-4 lg:grid-cols-3 lg:gap-x-12
                                 xl:w-1/2
@@ -175,8 +175,8 @@ export default function Services(){
                     </div>
 
                     <div className='group relative' id='bts'>
-                        <Card text="Behing the Scenes" bgcolor="bg-[#fff]" textcolor="text-[#000]" customstyles="absolute group-hover:invisible group-hover:h-0 duration-100" />
-                        <Card text="Behind-the-scenes footage for promoting our project or showcasing our process as we collaberate"
+                        <Card text="Behind the Scenes" bgcolor="bg-[#fff]" textcolor="text-[#000]" customstyles="absolute group-hover:invisible group-hover:h-0 duration-100" />
+                        <Card text="Behind-the-scenes footage for promoting our project or showcasing our process as we collaborate"
                             bgcolor="bg-vvm-pink" textcolor="text-[#fff]" customstyles="h-0 invisible overflow-y-hidden md:group-hover:h-40 md:group-hover:w-52 group-hover:visible min-[350px]:group-hover:w-40 min-[350px]:group-hover:h-52 duration-100" />
                     </div>
 
@@ -189,8 +189,8 @@ export default function Services(){
                 </div>
             </div>
             
-            <div className='pt-10 flex flex-col items-center'>
-                <p className='mb-8'>Pricing is based on the project. Want to know how much your project will cost?</p>
+            <div className='pt-12 mb-6 flex flex-col items-center'>
+                <h2 className='mb-8 text-xl'>Pricing is based on the project. Want to know how much your project will cost?</h2>
                 <Link href={"/contact"}><Button text="Request an Estimate" /></Link>
             </div>
             </div>
