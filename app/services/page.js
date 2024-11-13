@@ -13,7 +13,7 @@ config.autoAddCss = false
 
 export default function Services(){
     return (
-        <main className="pt-10 pb-10 text-center relative">
+        <main className="pt-10 pb-10 text-center relative bg-[#000]">
             {/* <Image src={'/VVM-bg-images/adrien-olichon-X8o-P23flgI-unsplash.jpg'} alt="background image" style={{objectFit:'cover'}} className='-z-10' fill priority /> */}
             <div className='z-0'>
             <div className="flex flex-col border-b mb-6 pb-6 border-vvm-teal items-center">
