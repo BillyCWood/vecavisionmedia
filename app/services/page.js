@@ -7,6 +7,11 @@ import Button from '../ui/button';
 import Link from 'next/link';
 import Image from 'next/image';
 
+import { Metadata } from 'next';
+ 
+export const metadata = {
+  title: 'Services',
+};
 
 config.autoAddCss = false
 

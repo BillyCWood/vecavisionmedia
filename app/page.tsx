@@ -10,32 +10,9 @@ export default function Home() {
     
     <main className="flex flex-col w-screen text-[#fff]">
       
-       
-      {/* <div className="min-h-screen bg-[#000] bg-center bg-no-repeat bg-cover justify-center pt-16" style={{backgroundImage: "url('/images/robert-shunev-mS1nlYbq1kA-unsplash.jpg')"}}>
-        <div className="flex flex-col items-center gap-y-2 px-6 text-center">
-          <h1 className="font-bold text-2xl">Bringing your vision to life, one frame at a time</h1>
-          <p className="mb-6">72% of customers say they prefer learning about a product or service through video. We can help you create impressive video content to grow your business and give customers the desire to have your produect or service.</p>
-          <Link href="/contact"><Button text="Learn How" /></Link>
-        </div>
-      </div>
+       {/* Hero Section */}
 
-      <div className="min-h-screen bg-center bg-no-repeat bg-cover pt-16" style={{backgroundImage: "url('/images/theregisti-HSXIp58yPyI-unsplash.jpg')"}}>
-        <div className="flex flex-col items-center gap-y-2 px-6 text-center">
-          <h1 className="font-bold text-2xl">Inspire, Engage, and Impress</h1>
-          <p className="mb-6">Hook your audience, engage their senses, and leave an unforgettable impression with captivaing cideo productions that elevate your brand.</p>
-          <Link href="/services"><Button text="View Services" /></Link>
-        </div>
-      </div>
-
-      <div className=" min-h-screen bg-center bg-no-repeat bg-cover pt-16" style={{backgroundImage: "url('/images/hunter-moranville-CMEpx6q7xrs-unsplash.jpg')"}}>
-        <div className="flex flex-col items-center gap-y-2 px-6 text-center">
-          <h1 className="font-bold text-2xl">See it for Yourself</h1>
-          <p className="mb-6">Examples of how we've brought our clients vision to life.</p>
-          <Link href="/portfolio" className="py-6" ><Button text="View the Vision" /></Link>
-        </div>
-      </div> */}
-
-      <div className="min-h-screen relative">
+      <div className="min-h-screen relative lg:border-b-2 border-vvm-pink">
         <Image src={'/images/robert-shunev-mS1nlYbq1kA-unsplash.jpg'} alt="camera 1" style={{objectFit:"cover"}} quality={75} className="-z-10" fill priority />
         <div className="flex flex-col items-center gap-y-2 pt-32 px-10 md:px-24 lg:px-48">
           <h1 className="font-bold text-2xl text-vvm-lightblue">Bringing your vision to life, one frame at a time</h1>
@@ -46,11 +23,13 @@ export default function Home() {
 
 
 
+      {/* Section 2 */}
+
       <div className="min-h-screen relative md:hidden">
         <Image src={'/images/theregisti-HSXIp58yPyI-unsplash.jpg'} alt="camera 1" style={{objectFit:"cover"}} quality={75} className="-z-10" fill priority />
         <div className="flex flex-col items-center gap-y-2 pt-32 px-6">
         <h1 className="font-bold text-2xl text-vvm-lightblue">Inspire, Engage, and Impress</h1>
-        <p className="mb-6 text-center">Hook your audience, engage their senses, and leave an unforgettable impression with captivaing video productions that elevate your brand.</p>
+        <p className="mb-6 md:text-center">Hook your audience, engage their senses, and leave an unforgettable impression with captivaing video productions that elevate your brand.</p>
         <Link href="/services"><Button text="View Services" /></Link>
         </div>
       </div>
@@ -69,7 +48,7 @@ export default function Home() {
       </div>
 
 
-      <div className="hidden min-h-screen max-h-screen lg:max-2xl:flex flex-col justify-evenly bg-[#000]">
+      <div className="hidden min-h-screen max-h-screen lg:max-2xl:flex flex-col justify-evenly bg-[#000] border-b-2 border-vvm-blue">
 
         <div className="relative mx-auto">
           <div className="bg-vvm-pink w-full h-[480px] absolute top-0 left-0 -translate-y-8 -translate-x-8 shadow-md shadow-vvm-blue"></div>
@@ -97,8 +76,6 @@ export default function Home() {
           
         </div>
 
-
-        
         
         
         <div className="max-lg:mx-auto w-1/2 lg:w-1/4 lg:mt-80 gap-y-2 flex flex-col">
@@ -110,26 +87,15 @@ export default function Home() {
       </div>
 
 
-{/* 
-      <div className="min-h-screen relative">
-        <Image src={'/images/hunter-moranville-CMEpx6q7xrs-unsplash.jpg'} alt="camera 3" style={{objectFit:"cover"}} quality={75} className="-z-10" fill />
-        <div className="flex flex-col items-center gap-y-2 pt-16 px-6">
-          <h1 className="font-bold text-2xl text-vvm-lightblue">See it for Yourself</h1>
-          <p className="mb-6 rounded-full bg-custom-gray/50">Examples of how we've brought our clients vision to life.</p>
-          <Link href="/portfolio"><Button text="View the Vision" /></Link>
-        </div>
 
-        <div className="">
-        </div>
 
-      </div>
- */}
+      {/* Section 3 */}
 
       <div className="min-h-screen relative md:hidden">
         <Image src={'/images/hunter-moranville-CMEpx6q7xrs-unsplash.jpg'} alt="camera 1" style={{objectFit:"cover"}} quality={75} className="-z-10" fill priority />
         <div className="flex flex-col items-center gap-y-2 pt-32 px-6">
           <h1 className="font-bold text-2xl text-vvm-lightblue">See it for Yourself</h1>
-          <p className="mb-6 rounded-full bg-custom-gray/50">Examples of how we've brought our clients vision to life.</p>
+          <p className="mb-6 rounded-full">Examples of how we've brought our clients vision to life.</p>
           <Link href="/portfolio"><Button text="View the Vision" /></Link>
         </div>
       </div>

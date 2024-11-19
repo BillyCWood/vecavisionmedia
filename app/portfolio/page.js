@@ -3,6 +3,12 @@ import { videos } from '../../utils/constants';
 
 import Image from "next/image";
 
+import { Metadata } from 'next';
+ 
+export const metadata = {
+  title: 'Portfolio',
+};
+
 export default function Portfolio(){
 
 
