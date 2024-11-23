@@ -26,6 +26,7 @@ export default function RootLayout({ children }) {
 
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+        <meta name="google-site-verification" content="DddGQf_lyWnsP5rbekxkDAv5ZCt4myOLIR9H54oSXkY" />
         <link rel="icon" href="/icon.ico" sizes="any" />
       </head>
 
