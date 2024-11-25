@@ -8,8 +8,8 @@ export const metadata = {
 
 export default function About(){
     return (
-        <main className="text-center relative bg-[#000] leading-loose">
-            {/* <Image src={'/VVM-bg-images/adrien-olichon-X8o-P23flgI-unsplash.jpg'} alt="background image" style={{objectFit:'cover'}} className='-z-10' fill priority /> */}
+        <main className="text-center relative leading-loose">
+            <Image src={'/VVM-bg-images/adrien-olichon-X8o-P23flgI-unsplash.jpg'} alt="background image" style={{objectFit:'cover'}} className='-z-10 opacity-30' fill priority />
             <div className="pt-10 pb-10 border-b border-vvm-teal">
                 <h2 className="font-bold text-2xl text-vvm-lightblue">Our Purpose</h2>
                 <p className="italic mt-2 mb-10">Bringing Your Vision to Life, Frame by Frame.</p>
@@ -35,8 +35,8 @@ export default function About(){
             
            
             <div className="pt-10 pb-10">
-                <h2 className="font-bold text-2xl">Our Team</h2>
-                <div className="bg-[#fff] text-[#ff2e2e] w-36 h-36 rounded-full m-auto pt-12">Image Coming Soon!</div>
+                <h2 className="font-bold text-2xl text-vvm-lightblue mb-10">Our Team</h2>
+                <Image src={'/images/VVM-Jaiden_head.jpg'} alt="Jaiden Veca" width={300} height={200} className="rounded-full mx-auto" />
                 <p className="px-6 mt-3">Jaiden Veca - Founder / Videographer</p>
             </div>
 

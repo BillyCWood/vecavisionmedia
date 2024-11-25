@@ -18,8 +18,8 @@ config.autoAddCss = false
 
 export default function Services(){
     return (
-        <main className="pt-10 pb-10 text-center relative bg-[#000]">
-            {/* <Image src={'/VVM-bg-images/adrien-olichon-X8o-P23flgI-unsplash.jpg'} alt="background image" style={{objectFit:'cover'}} className='-z-10' fill priority /> */}
+        <main className="pt-10 pb-10 text-center relative">
+            <Image src={'/VVM-bg-images/adrien-olichon-X8o-P23flgI-unsplash.jpg'} alt="background image" style={{objectFit:'cover'}} className='-z-10 opacity-30' fill priority />
             <div className='z-0'>
             <div className="flex flex-col border-b mb-10 pb-6 border-vvm-teal items-center">
                 <h2 className='font-bold text-2xl mb-2 text-vvm-lightblue'>Recurring Content Plan</h2>

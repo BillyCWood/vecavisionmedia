@@ -58,7 +58,7 @@ export default function Contact(){
 
     return (
         <main className="pt-10 pb-10 relative">
-            <Image src={'/VVM-bg-images/adrien-olichon-X8o-P23flgI-unsplash.jpg'} alt="background image" style={{objectFit:'cover'}} className='-z-10' fill priority />
+            <Image src={'/VVM-bg-images/adrien-olichon-X8o-P23flgI-unsplash.jpg'} alt="background image" style={{objectFit:'cover'}} className='-z-10 opacity-30' fill priority />
             <h2 className="font-bold text-xl text-center text-vvm-lightblue">Contact Veca Vision Media</h2>
             <Image src="/VVM-images/Veca-Vision.png" width={150} height={1} aria-hidden={true} alt="alternate logo" className="mx-auto" />
             <div className="flex justify-center">
