@@ -132,7 +132,7 @@ export default function Services(){
                 >
                     
                     <div className='group relative' id='contract'>
-                        <Card text="RCP Contract" bgcolor="bg-[#fff]" textcolor="text-[#000]"  customstyles="absolute group-hover:invisible group-hover:h-0 duration-100" />
+                        <Card text="Recurring Content Plan (RCP) Contract" bgcolor="bg-[#fff]" textcolor="text-[#000]"  customstyles="absolute group-hover:invisible group-hover:h-0 duration-100" />
                         <Card text="A tailored solution to streamline ongoing content creation and marketing strategies on a monthly basis"
                             bgcolor="bg-vvm-pink" textcolor="text-[#fff]" customstyles="h-0 invisible overflow-y-hidden md:group-hover:h-40 md:group-hover:w-52 group-hover:visible min-[350px]:group-hover:w-40 min-[350px]:group-hover:h-52 duration-100" />
                     </div>
