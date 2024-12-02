@@ -16,7 +16,7 @@ const NewVideo = ( { title, thumbnail, src, description, alt } ) => {
 
 
   return (
-    <div className='flex flex-col items-center gap-y-6'>
+    <div className='flex flex-col items-center gap-y-6 mb-10'>
         <h1 className="text-xl font-bold mb-2">{title}</h1>
         
         <div className="group grid place-items-center [grid-template-areas:'stack'] bg-vvm-pink rounded-md overflow-hidden" onClick={() => setShow('fixed')}>
