@@ -21,7 +21,7 @@ const NewVideo = ( { title, thumbnail, src, description, alt } ) => {
         
         <div className="group grid place-items-center [grid-template-areas:'stack'] bg-vvm-pink rounded-md overflow-hidden" onClick={() => setShow('fixed')}>
             <Image src={thumbnail} alt={alt} width={1920} height={1080} className='transition-opacity ease-in-out duration-300 group-hover:opacity-40 group-hover:cursor-pointer [grid-area:stack] object-contain' />
-            <p className="block opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300 [grid-area:stack] group-hover:cursor-pointer z-[2] lg:block px-6 xl:px-28">{description}</p>
+            <p className="hidden lg:block opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300 [grid-area:stack] group-hover:cursor-pointer z-[2] px-6 xl:px-28">{description}</p>
         </div>
 
 
