@@ -12,8 +12,7 @@ export default function Contact(){
 
     //const router = useRouter();
 
-    const [fname, setFname] = useState('');
-    const [lname, setLname] = useState('');
+    const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [phone, setPhone] = useState('');
     const [org, setOrg] = useState('');
@@ -25,8 +24,7 @@ export default function Contact(){
         setIsLoading(true);
 
         const data = {
-            fname, 
-            lname, 
+            name, 
             email, 
             phone, 
             org, 
@@ -42,8 +40,7 @@ export default function Contact(){
         if(res.status === 200) {
             alert("Success! Your message and information has been submitted! Thank you!");
             setIsLoading(false);
-            setFname('');
-            setLname('');
+            setName('');
             setEmail('');
             setPhone('');
             setOrg('');
@@ -72,13 +69,8 @@ export default function Contact(){
             <form className="flex flex-col mt-6 pt-6 pb-10 items-center" onSubmit={handleSubmit}>
                 
                 <div className="flex flex-col">
-                    <label className="mb-1">First Name:</label>
-                    <input className="mb-6 w-96 rounded-lg text-[#000] pl-2" type="text" id="fname" name="fname" value={fname} aria-hidden={false} aria-label="First Name" onChange={ (e) => setFname(e.target.value) } required />
-                </div>
-
-                <div className="flex flex-col">
-                    <label className="mb-1">Last Name:</label>
-                    <input className="mb-6 w-96 rounded-lg text-[#000] pl-2" type="text" id="lname" name="lname" value={lname} aria-hidden={false} aria-label="Last Name" onChange={ (e) => setLname(e.target.value) } required />
+                    <label className="mb-1">Name:</label>
+                    <input className="mb-6 w-96 rounded-lg text-[#000] pl-2" type="text" id="name" name="name" value={name} aria-hidden={false} aria-label="Name" onChange={ (e) => setName(e.target.value) } required />
                 </div>
 
                 <div className="flex flex-col">

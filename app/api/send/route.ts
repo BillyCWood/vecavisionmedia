@@ -9,12 +9,12 @@ export async function POST(request:Request, res:Response) {
   // set rate limit
   
   try {
-    const { fname, lname, email, phone, org, message } = await request.json();
+    const { name, email, phone, org, message } = await request.json();
     const { data, error } = await resend.emails.send({
       from: 'Veca Vision Media <noreply@resend.dev>',
       to: 'veca.vision@gmail.com',
-      subject: 'New Contact Request from ' + fname + ' ' + lname + '!',
-      react: EmailTemplate({ fname, lname, email, phone, org, message }),
+      subject: 'New Contact Request from ' + name + '!',
+      react: EmailTemplate({ name, email, phone, org, message }),
     });
 
     if (error) {
