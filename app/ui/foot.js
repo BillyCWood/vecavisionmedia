@@ -19,9 +19,7 @@ export default function Foot() {
                     <a href='https://www.youtube.com/channel/UC59xCCLBkobyj5wyEphwQmg' target='_blank' rel='noopener noreferrer' ><FontAwesomeIcon icon={faYoutube} aria-hidden={false} aria-label='Veca Vision Youtube' className="hover:text-vvm-pink hover:cursor-pointer" /></a>
                 </div>
             </div>
-            <div>
-                Subscribe
-            </div>
+            
             <div>
                 Contact Us
                 <div className="font-thin">(406)595-6899</div>
