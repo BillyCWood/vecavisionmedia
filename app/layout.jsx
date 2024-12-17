@@ -16,7 +16,6 @@ export const metadata = {
   },
   description: "Videography Business based in Bozeman, MT",
   keywords:['Videography', 'Videos', 'Advertisement', 'Bozeman', 'Montana', 'MT', 'Veca', 'Vision', 'Media'],
-  creator: 'Billy Wood',
 };
 
 
@@ -27,6 +26,8 @@ export default function RootLayout({ children }) {
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
         <meta name="google-site-verification" content={process.env.GOOGLE}/>
+        <meta name="keywords" content="videography, videos, advertisement, bozeman, montana, mt, veca vision media" />
+        <meta name="description" content="Videography Business based in Bozeman, MT" />
         <link rel="icon" href="/icon.ico" sizes="any" />
       </head>
 
