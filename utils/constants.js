@@ -10,7 +10,7 @@
         cloudinaryThumbnail: '',
         thumbnailAltText: "",
         description: "",
-    },
+    };
 */
 
 import { cloudinaryLoader } from "next-cloudinary";
@@ -44,7 +44,7 @@ const SpecialK = {
 
 const DavesSushi = {
     id: 3,
-    category: 'food',
+    category: 'service',
     //src: '/videos/Daves Sushi Promo Final (MP4).mp4',
     //src:'Daves_Sushi_Promo_Final_MP4_xei5wu',
     src:'https://res.cloudinary.com/doxstpden/video/upload/v1728421173/Daves_Sushi_Promo_Final_MP4_xei5wu.mp4',
@@ -94,7 +94,7 @@ const CasaGrandeRealEstate_2981FenWay = {
 
 const MontanaFence = {
     id: 7,
-    category: 'promotional',
+    category: 'industrial',
     //src: 'MontanaFenceVideo_fclvlt',
     src:'https://res.cloudinary.com/doxstpden/video/upload/v1728967051/MontanaFenceVideo_fclvlt.mp4',
     title: "Montana Fence",
@@ -102,6 +102,61 @@ const MontanaFence = {
     cloudinaryThumbnail: 'MontanaFenceThumbnail_g0yht1',
     thumbnailAltText: "Montana Fence Thumbnail",
     description: "Premier Fencing, Locally Owned. Providing fence installation, repair, and retail to Montanan families for over 40 years.",
+};
+
+const EvolveSalon =  {
+    id: 8,
+    category: 'service',
+    src: 'https://res.cloudinary.com/doxstpden/video/upload/v1735504495/Evolve_Hype_Video_1_ixqcea.mp4',
+    title: "Evolve Hair Design",
+    thumbnail: '/thumbnails/evolve_thumbnail.jpg',
+    cloudinaryThumbnail: 'evolve_thumbnail_ff9xky',
+    thumbnailAltText: "Evolve Hair Design Thumbnail",
+    description: "",
+};
+
+const WillieDist =  {
+    id: 9,
+    category: 'service',
+    src: 'https://res.cloudinary.com/doxstpden/video/upload/v1735504467/Willie_s_Distillery_Collab_Video_1.5_ytcml0.mp4',
+    title: "Willie's Distillery",
+    thumbnail: '/thumbnails/willie_thumbnail.jpg',
+    cloudinaryThumbnail: 'willie_thumbnail_yfmghj',
+    thumbnailAltText: "Willie's Distillery Thumbnail",
+    description: "",
+};
+
+const TjaConsult =  {
+    id: 10,
+    category: 'service',
+    src: 'https://res.cloudinary.com/doxstpden/video/upload/v1735504474/TJA_Consulting_Social_Media_Ad_1_-_Revision_qfremj.mp4',
+    title: "TJA Consulting LLC",
+    thumbnail: '/thumbnails/TJAConsulting_thumbnail.jpg',
+    cloudinaryThumbnail: 'TJAConsulting_ivlfan',
+    thumbnailAltText: "TJA Consulting thumbnail",
+    description: "",
+};
+
+const CraftedAesWell =  {
+    id: 11,
+    category: 'service',
+    src: 'https://res.cloudinary.com/doxstpden/video/upload/v1735504472/Crafted_Web_Video_WITH_MUSIC_ljx41i.mp4',
+    title: "Crafted Aesthetics and Wellness",
+    thumbnail: '/thumbnails/CraftedAes_thumbnail.png',
+    cloudinaryThumbnail: 'CraftedAes_thumbnail_xhx9zs',
+    thumbnailAltText: "Crafted Aesthetics and Wellness Thumbnail",
+    description: "",
+};
+
+const MTFlavor =  {
+    id: 12,
+    category: 'product',
+    src: 'https://res.cloudinary.com/doxstpden/video/upload/v1735504290/MT_Flavor_Product_Video_1_wjwufr.mp4',
+    title: "Montana Flavor",
+    thumbnail: '/thumbnails/MontanaFlavor_thumbnail.jpg',
+    cloudinaryThumbnail: 'MontanaFlavor_gs3ude',
+    thumbnailAltText: "Montana Flavor Thumbnail",
+    description: "",
 };
 
 
@@ -115,6 +170,12 @@ export const videos = [
     MontanaFence,
     SavageRealEstate_3126Savannah,
     CasaGrandeRealEstate_2981FenWay,
+    OnoRoller,
+    EvolveSalon,
+    WillieDist,
+    TjaConsult,
+    CraftedAesWell,
+    MTFlavor
 ];
 
 // CAROUSEL VIDEOS
