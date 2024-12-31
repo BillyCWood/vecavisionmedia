@@ -29,6 +29,15 @@ export default function RootLayout({ children }) {
         <meta name="keywords" content="videography, videos, advertisement, bozeman, montana, mt, veca vision media" />
         <meta name="description" content="Videography Business based in Bozeman, MT" />
         <link rel="icon" href="/icon.ico" sizes="any" />
+        <script type="application/ld+json">
+        {{
+          "@context" : "https://schema.org",
+          "@type" : "WebSite",
+          "name" : "Veca Vision Media",
+          "alternateName" : "VVM",
+          "url" : "https://vecavisionmedia.com/"
+        }}
+        </script>
       </head>
 
       <body className={`${inter.className} text-[#fff] bg-[#000]`}>
