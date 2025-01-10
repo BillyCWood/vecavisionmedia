@@ -25,7 +25,6 @@ export default function RootLayout({ children }) {
 
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
-        <meta name="google-site-verification" content={process.env.GOOGLE}/>
         <meta name="google-site-verification" content={process.env.GOOGLE_VVM}/>
         <meta name="keywords" content="videography, videos, advertisement, bozeman, montana, mt, veca vision media" />
         <meta name="description" content="Videography Business based in Bozeman, MT" />
