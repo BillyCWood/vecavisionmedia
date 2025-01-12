@@ -12,7 +12,7 @@ export async function POST(request:Request, res:Response) {
     const { name, email, phone, org, message } = await request.json();
     const { data, error } = await resend.emails.send({
       from: 'Veca Vision Media <noreply@resend.dev>',
-      to: 'veca.vision@gmail.com',
+      to: ['veca.vision@gmail.com'],
       subject: 'New Contact Request from ' + name + '!',
       react: EmailTemplate({ name, email, phone, org, message }),
     });
