@@ -10,12 +10,21 @@ export async function POST(request:Request, res:Response) {
   
   try {
     const { name, email, phone, org, message } = await request.json();
-    const { data, error } = await resend.emails.send({
-      from: 'Veca Vision Media <noreply@vecavisionmedia.com>',
-      to: ['veca.vision@gmail.com'],
-      subject: 'New Contact Request from ' + name + '!',
-      react: EmailTemplate({ name, email, phone, org, message }),
-    });
+    const { data, error } = await resend.batch.send([
+      {
+        from: 'Veca Vision Media <noreply@vecavisionmedia.com>',
+        to: ['veca.vision@gmail.com'],
+        subject: 'New Contact Request from ' + name + '!',
+        react: EmailTemplate({ name, email, phone, org, message }),
+      },
+      {
+        from: 'Veca Vision Media <noreply@vecavisionmedia.com>',
+        to: [email],
+        subject: 'New Contact Request from ' + name + '!',
+        react: EmailTemplate({ name, email, phone, org, message }),
+      },
+    
+    ]);
 
     if (error) {
       return Response.json({ error }, { status: 500 });
