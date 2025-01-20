@@ -16,7 +16,7 @@ export default function Home() {
         <Image src={'/images/robert-shunev-mS1nlYbq1kA-unsplash.jpg'} alt="camera 1" style={{objectFit:"cover"}} quality={75} className="-z-10 max-lg:opacity-65" fill priority />
         <div className="flex flex-col items-center gap-y-2 pt-32 px-10 md:px-24 lg:px-48">
           <h1 className="font-bold text-2xl text-vvm-lightblue">Bringing your vision to life, one frame at a time</h1>
-          <p className="mb-6">72% of customers say they prefer learning about a product or service through video. We can help you create impressive video content to grow your business and give customers the desire to have your product or service.</p>
+          <p className="mb-6 text-left">72% of customers say they prefer learning about a product or service through video. We can help you create impressive video content to grow your business and give customers the desire to have your product or service.</p>
           <Link href="/contact"><Button text="Learn How" /></Link>
         </div>
       </div>
@@ -29,7 +29,7 @@ export default function Home() {
         <Image src={'/images/theregisti-HSXIp58yPyI-unsplash.jpg'} alt="camera 1" style={{objectFit:"cover"}} quality={75} className="-z-10 opacity-65" fill priority />
         <div className="flex flex-col items-center gap-y-2 pt-32 px-6">
         <h1 className="font-bold text-2xl text-vvm-lightblue">Inspire, Engage, and Impress</h1>
-        <p className="mb-6">Hook your audience, engage their senses, and leave an unforgettable impression with captivaing video productions that elevate your brand.</p>
+        <p className="mb-6 text-left">Hook your audience, engage their senses, and leave an unforgettable impression with captivaing video productions that elevate your brand.</p>
         <Link href="/services"><Button text="View Services" /></Link>
         </div>
       </div>

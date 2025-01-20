@@ -1,4 +1,5 @@
-import { EmailTemplate } from '../../emails/email-template';
+import CustomerInfo from '../../emails/customerInfo';
+import Confirmation from '../../emails/confirmation';
 import { Resend } from 'resend';
 
 
@@ -15,13 +16,13 @@ export async function POST(request:Request, res:Response) {
         from: 'Veca Vision Media <noreply@vecavisionmedia.com>',
         to: ['veca.vision@gmail.com'],
         subject: 'New Contact Request from ' + name + '!',
-        react: EmailTemplate({ name, email, phone, org, message }),
+        react: CustomerInfo({ name, email, phone, org, message }),
       },
       {
         from: 'Veca Vision Media <noreply@vecavisionmedia.com>',
         to: [email],
-        subject: 'New Contact Request from ' + name + '!',
-        react: EmailTemplate({ name, email, phone, org, message }),
+        subject: 'Veca Vision Media Contact Confirmation',
+        react: Confirmation({ name, email, phone, org, message }),
       },
     
     ]);

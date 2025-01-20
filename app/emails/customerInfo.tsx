@@ -19,7 +19,7 @@ interface EmailTemplateProps {
     message: string;
 }
 
-export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
+export const CustomerInfo: React.FC<Readonly<EmailTemplateProps>> = ({
     name, email, phone, org, message
 }) => (
     <div className='flex flex-col gap-y-6 justify-center'>
@@ -39,4 +39,4 @@ export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
 );
 
 
-export default EmailTemplate;
+export default CustomerInfo;

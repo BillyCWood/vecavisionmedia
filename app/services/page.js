@@ -23,7 +23,7 @@ export default function Services(){
             <div className='z-0'>
             <div className="flex flex-col border-b mb-10 pb-6 border-vvm-teal items-center">
                 <h2 className='font-bold text-2xl mb-2 text-vvm-lightblue'>Recurring Content Plan</h2>
-                <p className='px-14 text-lg mb-6'>Leverage a curated monthly marketing plan, tailored to your brand, to consistently engage your audience and drive result.</p>
+                <p className='px-14 text-lg mb-6 text-left'>Leverage a curated monthly marketing plan, tailored to your brand, to consistently engage your audience and drive result.</p>
                 <Link href={"/contact"}><Button text="Schedule a Chat" /></Link>
             </div>
             <div className="border-b mb-10 pb-6 border-vvm-blue">
@@ -123,7 +123,7 @@ export default function Services(){
 
             <div className="border-b mb-6 pb-6 border-vvm-pink">
                 <h2 className='font-bold text-2xl mb-2 text-vvm-lightblue'>Add-Ons</h2>
-                <p className='text-lg'>Maximize the impact of your project with these valuable add-ons and more</p>
+                <p className='text-lg text-left'>Maximize the impact of your project with these valuable add-ons and more</p>
                 <div className='grid m-auto place-items-center mt-12 gap-y-6
                                 min-[350px]:grid-rows-5 min-[350px]:grid-cols-2 min-[350px]:gap-x-1 min-[350px]:w-4/5
                                 lg:grid-rows-4 lg:grid-cols-3 lg:gap-x-12
@@ -132,7 +132,7 @@ export default function Services(){
                 >
                     
                     <div className='group relative' id='contract'>
-                        <Card text="Recurring Content Plan (RCP) Contract" bgcolor="bg-[#fff]" textcolor="text-[#000]"  customstyles="absolute group-hover:invisible group-hover:h-0 duration-100" />
+                        <Card text="Recurring Content Plan Contract" bgcolor="bg-[#fff]" textcolor="text-[#000]"  customstyles="absolute group-hover:invisible group-hover:h-0 duration-100" />
                         <Card text="A tailored solution to streamline ongoing content creation and marketing strategies on a monthly basis"
                             bgcolor="bg-vvm-pink" textcolor="text-[#fff]" customstyles="h-0 invisible overflow-y-hidden md:group-hover:h-40 md:group-hover:w-52 group-hover:visible min-[350px]:group-hover:w-40 min-[350px]:group-hover:h-52 duration-100" />
                     </div>
