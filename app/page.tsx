@@ -47,7 +47,7 @@ React.useEffect(() => {
 
       {/* Section 2 */}
 
-      <div className="min-h-screen relative">
+      <div className="min-h-screen relative mb-16">
         <Image src={'/images/theregisti-HSXIp58yPyI-unsplash.jpg'} alt="camera 1" style={{objectFit:"cover"}} quality={75} className="max-lg:hidden -z-10 opacity-50" fill priority />
         <div className="flex flex-col items-center gap-y-2 lg:pt-32 px-6">
         <h1 className="font-bold text-2xl text-vvm-lightblue">Inspire, Engage, and Impress</h1>
