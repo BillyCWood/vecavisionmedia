@@ -57,16 +57,14 @@ module.exports = {
   				'3': 'hsl(var(--chart-3))',
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
-  			}
+  			},
+			'custom-gray': '#1f1f1f',
+			'vvm-pink': '#ac00e6',
+			'vvm-teal': '#03fcca',
+			'vvm-blue': '#0384fc',
+			'vvm-lightblue': '#38BDF8'
   		}
   	},
-  	colors: {
-  		'custom-gray': '#1f1f1f',
-  		'vvm-pink': '#ac00e6',
-  		'vvm-teal': '#03fcca',
-  		'vvm-blue': '#0384fc',
-  		'vvm-lightblue': '#38BDF8'
-  	}
   },
   plugins: [require("tailwindcss-animate")],
 };
