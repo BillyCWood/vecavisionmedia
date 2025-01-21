@@ -54,7 +54,7 @@ React.useEffect(() => {
         <Image src={'/images/theregisti-HSXIp58yPyI-unsplash.jpg'} alt="camera 1" style={{objectFit:"cover"}} quality={75} className="max-lg:hidden -z-10 opacity-50" fill priority />
         <div className="flex flex-col items-center gap-y-2 lg:pt-32 px-6">
         <h1 className="font-bold text-2xl text-vvm-lightblue">Inspire, Engage, and Impress</h1>
-        <p className="mb-14 px-5 lg:w-3/5 mx-auto text-left">Hook your audience, engage their senses, and leave an unforgettable impression with captivaing video productions that elevate your brand.</p>
+        <p className="mb-14 px-5 lg:w-3/5 mx-auto text-left">Hook your audience, engage their senses, and leave an unforgettable impression with captivating video productions that elevate your brand.</p>
         
         
         <div id="home-service-container" className="grid grid-cols-1 grid-rows-4 lg:grid-cols-2 lg:grid-rows-2 max-lg:gap-y-10 text-left mb-10 lg:mt-10 2xl:mt-14">
