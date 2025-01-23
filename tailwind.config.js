@@ -58,7 +58,7 @@ module.exports = {
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
   			},
-			'custom-gray': '#1f1f1f',
+			'custom-gray': '#1a1a1a',
 			'vvm-pink': '#ac00e6',
 			'vvm-teal': '#03fcca',
 			'vvm-blue': '#0384fc',
