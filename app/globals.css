@@ -131,3 +131,48 @@
 .show:nth-child(4) {
   transition-delay: 600ms;
 }
+
+@keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+.logos {
+    @apply overflow-hidden py-16 whitespace-nowrap relative
+}
+  
+.slide-container:before,
+.slide-container:after {
+    @apply absolute top-0 h-full z-[2] content-[''] w-28 md:w-56
+}
+  
+.logos:before {
+    @apply left-0 bg-gradient-to-l from-white/0 to-custom-gray to-80%
+}
+  
+.logos:after {
+    @apply right-0 bg-gradient-to-r from-white/0 to-custom-gray to-80%
+}
+  
+.slide-container:hover .image-container {
+    animation-play-state: paused;
+}
+  
+.logos-slide {
+    @apply animate-infinite-scroll;
+}
+
+.carousel-logo {
+    @apply min-w-[256px] object-contain;
+}
+.carousel-logo-svg {
+    @apply min-w-40;
+}
+
+.image-container li {
+    @apply mx-20;
+}

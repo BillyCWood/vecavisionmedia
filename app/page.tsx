@@ -37,7 +37,7 @@ React.useEffect(() => {
       
        {/* Hero Section */}
 
-      <div className="min-h-screen relative border-b-2 border-white">
+      <div className="min-h-screen relative">
         <Image src={'/images/robert-shunev-mS1nlYbq1kA-unsplash.jpg'} alt="camera 1" style={{objectFit:"cover"}} quality={75} className="-z-10 max-lg:opacity-65" fill priority />
         <div className="flex flex-col items-center gap-y-2 pt-32 px-10 md:px-24 lg:px-48">
           <h1 className="font-bold text-2xl text-vvm-lightblue">Bringing your vision to life, one frame at a time</h1>
@@ -47,7 +47,6 @@ React.useEffect(() => {
       </div>
 
 
-      <CompanyLogos />
 
       {/* Section 2 */}
 
@@ -157,9 +156,10 @@ React.useEffect(() => {
         
     
       </div>
+      <CompanyLogos />
       
     </main>
     
- 
-  );
+    
+);
 }
