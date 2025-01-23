@@ -158,9 +158,6 @@
     @apply right-0 bg-gradient-to-r from-white/0 to-custom-gray to-80%
 }
   
-.slide-container:hover .image-container {
-    animation-play-state: paused;
-}
   
 .logos-slide {
     @apply animate-infinite-scroll;
