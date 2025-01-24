@@ -39,7 +39,7 @@ React.useEffect(() => {
 
       <div className="min-h-screen relative">
         <Image src={'/images/robert-shunev-mS1nlYbq1kA-unsplash.webp'} alt="camera 1" style={{objectFit:"cover"}} quality={75} className="-z-10 opacity-50" fill priority />
-        <div className="flex flex-col items-center gap-y-2 pt-32 px-10 md:px-24 lg:px-48">
+        <div className="flex flex-col items-center gap-y-2 pt-32 px-5 md:px-24 lg:px-48">
           <h1 className="text-left md:text-center font-bold text-2xl text-vvm-lightblue">Bringing your vision to life, one frame at a time</h1>
           <p className="mb-6 text-left xl:w-2/3 2xl:w-1/2">72% of customers say they prefer learning about a product or service through video. We can help you create impressive video content to grow your business and give customers the desire to have your product or service.</p>
           <Link href="/contact"><Button text="Learn How" /></Link>
@@ -97,6 +97,7 @@ React.useEffect(() => {
 
       {/* Section 3 */}
 
+{/*
       <div className="min-h-screen relative md:hidden">
         <Image src={'/images/hunter-moranville-CMEpx6q7xrs-unsplash.webp'} alt="camera 1" style={{objectFit:"cover"}} quality={75} className="-z-10 opacity-50" fill />
         <div className="flex flex-col items-center gap-y-2 pt-32 px-6">
@@ -108,9 +109,9 @@ React.useEffect(() => {
 
 
       <div className="hidden md:max-lg:flex flex-col min-h-screen">
-        
+
         <Image src={'/images/hunter-moranville-CMEpx6q7xrs-unsplash.webp'} alt="camera 1" width={960} height={960} />
-        
+
         <div className="flex flex-col items-center gap-y-2 pt-24 px-16">
           <h1 className="font-bold text-2xl text-vvm-lightblue">See it for Yourself</h1>
           <p className="mb-6 rounded-full">Examples of how we've brought our clients vision to life.</p>
@@ -125,16 +126,16 @@ React.useEffect(() => {
           <div className="bg-vvm-blue w-full h-[480px] absolute top-0 left-0 -translate-y-8 -translate-x-8 shadow-md shadow-vvm-pink"></div>
           <Image src={'/images/hunter-moranville-CMEpx6q7xrs-unsplash.webp'} alt="camera 2" width={720} height={1} className="relative z-[1] shadow-custom-gray shadow-lg" />
           <div className="bg-vvm-pink w-full h-[480px] absolute top-0 left-0 translate-y-8 translate-x-8 shadow-md shadow-vvm-blue"></div>
-          
+
         </div>
 
-        
+
         <div className="mx-auto w-1/2 gap-y-2 flex flex-col items-center">
           <h1 className="font-bold text-2xl text-vvm-lightblue">See it for Yourself</h1>
           <p className="mb-6 rounded-full">Examples of how we've brought our clients vision to life.</p>
           <Link href="/portfolio"><Button text="View the Vision" /></Link>
         </div>
-    
+
       </div>
 
 
@@ -151,12 +152,18 @@ React.useEffect(() => {
           <div className="bg-vvm-blue w-full h-[640px] absolute top-0 left-0 translate-y-36 -translate-x-8 shadow-md shadow-vvm-pink"></div>
           <Image src={'/images/hunter-moranville-CMEpx6q7xrs-unsplash.webp'} alt="camera 2" width={960} height={960} className="relative z-[1] shadow-custom-gray shadow-lg" />
           <div className="bg-vvm-pink w-full h-[640px] absolute top-0 left-0 translate-y-52 translate-x-8 shadow-md shadow-vvm-blue"></div>
-          
-        </div>    
-        
-    
+
+        </div>
+
+
       </div>
+*/}
       <CompanyLogos />
+      <div className="flex flex-col items-center gap-y-2 my-20 px-6">
+        <h1 className="font-bold text-2xl text-vvm-lightblue">See it for Yourself</h1>
+        <p className="mb-6 rounded-full">Watch how we've brought our clients' vision to life.</p>
+        <Link href="/portfolio"><Button text="View the Vision" /></Link>
+      </div>
       
     </main>
     

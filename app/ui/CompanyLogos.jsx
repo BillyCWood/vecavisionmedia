@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const CompanyLogos = () => {
   return (
-    <div className='bg-custom-gray py-10 relative border-t-2 border-white'>
+    <div className='bg-custom-gray py-10 relative border-y-2 border-white'>
         <h2 className='font-bold text-2xl mb-5'>Trusted by the Gallatin Valley</h2>
         <div className="slide-container w-full inline-flex flex-nowrap">
             <ul id="top-slide-1" className="image-container flex items-center justify-center">
