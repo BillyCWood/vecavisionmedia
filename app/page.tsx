@@ -51,7 +51,7 @@ React.useEffect(() => {
       {/* Section 2 */}
 
       <div className="min-h-screen relative mb-16 border-t-2 border-vvm-pink">
-        <Image src={'/images/theregisti-HSXIp58yPyI-unsplash.jpg'} alt="camera 1" style={{objectFit:"cover"}} quality={75} className="max-lg:hidden -z-10 opacity-50" fill />
+        <Image src={'/images/theregisti-HSXIp58yPyI-unsplash.webp'} alt="camera 1" style={{objectFit:"cover"}} quality={75} className="max-lg:hidden -z-10 opacity-50" fill />
         <div className="flex flex-col items-center gap-y-2 lg:pt-32 px-6">
         <h1 className="font-bold text-2xl max-lg:mt-10 text-vvm-lightblue">Inspire, Engage, and Impress</h1>
         <p className="mb-14 md:w-3/5 mx-auto text-left lg:text-center">Hook your audience, engage their senses, and leave an unforgettable impression with captivating video productions that elevate your brand.</p>
@@ -123,7 +123,7 @@ React.useEffect(() => {
 
         <div className="relative mx-auto">
           <div className="bg-vvm-blue w-full h-[480px] absolute top-0 left-0 -translate-y-8 -translate-x-8 shadow-md shadow-vvm-pink"></div>
-          <Image src={'/images/hunter-moranville-CMEpx6q7xrs-unsplash.jpg'} alt="camera 2" width={720} height={1} className="relative z-[1] shadow-custom-gray shadow-lg" />
+          <Image src={'/images/hunter-moranville-CMEpx6q7xrs-unsplash.webp'} alt="camera 2" width={720} height={1} className="relative z-[1] shadow-custom-gray shadow-lg" />
           <div className="bg-vvm-pink w-full h-[480px] absolute top-0 left-0 translate-y-8 translate-x-8 shadow-md shadow-vvm-blue"></div>
           
         </div>
@@ -149,7 +149,7 @@ React.useEffect(() => {
 
         <div className="relative pt-44">
           <div className="bg-vvm-blue w-full h-[640px] absolute top-0 left-0 translate-y-36 -translate-x-8 shadow-md shadow-vvm-pink"></div>
-          <Image src={'/images/hunter-moranville-CMEpx6q7xrs-unsplash.jpg'} alt="camera 2" width={960} height={960} className="relative z-[1] shadow-custom-gray shadow-lg" />
+          <Image src={'/images/hunter-moranville-CMEpx6q7xrs-unsplash.webp'} alt="camera 2" width={960} height={960} className="relative z-[1] shadow-custom-gray shadow-lg" />
           <div className="bg-vvm-pink w-full h-[640px] absolute top-0 left-0 translate-y-52 translate-x-8 shadow-md shadow-vvm-blue"></div>
           
         </div>    
