@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="84b89df7-08be-4596-b1fb-4a2e06824d16" name="local" url="http://localhost:3000">
+        <fileTransfer mountedRoot="\\wsl.localhost\Ubuntu\home\billywood\apps\webdev\VecaVisionMedia\vecavisionmedia" accessType="MOUNT" port="0" />
+      </webServer>
+    </option>
+  </component>
+</project>

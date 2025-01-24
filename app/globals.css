@@ -142,7 +142,7 @@
   }
   
 .logos {
-    @apply overflow-hidden py-16 whitespace-nowrap relative
+    @apply overflow-hidden py-16 relative
 }
   
 .slide-container:before,
@@ -157,19 +157,25 @@
 .logos:after {
     @apply right-0 bg-gradient-to-r from-white/0 to-custom-gray to-80%
 }
-  
-  
-.logos-slide {
-    @apply animate-infinite-scroll;
-}
+
 
 .carousel-logo {
-    @apply min-w-[256px] object-contain;
+    @apply min-w-[128px] object-contain;
 }
 .carousel-logo-svg {
-    @apply min-w-40;
+    @apply min-w-28;
 }
 
 .image-container li {
-    @apply mx-20;
+    @apply mx-36;
+}
+
+#top-slide-1,
+#top-slide-2 {
+  @apply animate-infinite-scroll-left;
+}
+
+#bottom-slide-1,
+#bottom-slide-2 {
+  @apply animate-infinite-scroll-right;
 }

@@ -9,7 +9,7 @@ export const metadata = {
 export default function About(){
     return (
         <main className="text-center relative leading-loose">
-            <Image src={'/VVM-bg-images/adrien-olichon-X8o-P23flgI-unsplash.jpg'} alt="background image" style={{objectFit:'cover'}} className='-z-10 opacity-30' fill priority />
+            <Image src={'/VVM-bg-images/adrien-olichon-X8o-P23flgI-unsplash.webp'} alt="background image" style={{objectFit:'cover'}} className='-z-10 opacity-30' fill priority />
             <div className="pt-10 pb-10 border-b border-vvm-teal">
                 <h2 className="font-bold text-2xl text-vvm-lightblue">Our Purpose</h2>
                 <p className="italic mt-2 mb-10">Bringing Your Vision to Life, Frame by Frame.</p>

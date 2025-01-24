@@ -1,4 +1,4 @@
-/** @type {import('tailwindcss').Config} */
+/** @type {import('tailwindcss').Config} */ const {right} = require("@cloudinary/url-gen/qualifiers/textAlignment");
 module.exports = {
     darkMode: ["class"],
     content: [
@@ -9,13 +9,18 @@ module.exports = {
   theme: {
   	extend: {
         animation: {
-            'infinite-scroll': 'infinite-scroll 25s linear infinite',
+            'infinite-scroll-left': 'infinite-scroll-left 24s linear infinite',
+			'infinite-scroll-right': 'infinite-scroll-right 24s linear infinite',
         },
         keyframes: {
-            'infinite-scroll': {
+            'infinite-scroll-left': {
                 from: { transform: 'translateX(0)' },
                 to: { transform: 'translateX(-100%)' },
-            }
+            },
+			'infinite-scroll-right': {
+				from: { transform: 'translateX(-100%)' },
+				to: { transform: 'translateX(0%)' },
+			}
         },
   		backgroundImage: {
   			'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
