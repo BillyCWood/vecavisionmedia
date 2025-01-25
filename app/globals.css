@@ -162,6 +162,9 @@
 .carousel-logo {
     @apply min-w-[128px] object-contain;
 }
+.carousel-logo2 {
+    @apply min-w-[192px] object-contain;
+}
 .carousel-logo-svg {
     @apply min-w-28;
 }

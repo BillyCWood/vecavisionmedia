@@ -9,8 +9,8 @@ module.exports = {
   theme: {
   	extend: {
         animation: {
-            'infinite-scroll-left': 'infinite-scroll-left 24s linear infinite',
-			'infinite-scroll-right': 'infinite-scroll-right 24s linear infinite',
+            'infinite-scroll-left': 'infinite-scroll-left 18s linear infinite',
+			'infinite-scroll-right': 'infinite-scroll-right 21s linear infinite',
         },
         keyframes: {
             'infinite-scroll-left': {
