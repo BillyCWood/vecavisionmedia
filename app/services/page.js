@@ -123,7 +123,7 @@ export default function Services(){
 
             <div className="border-b mb-6 pb-6 border-vvm-pink">
                 <h2 className='font-bold text-2xl mb-2 text-vvm-lightblue'>Add-Ons</h2>
-                <p className='text-lg text-left'>Maximize the impact of your project with these valuable add-ons and more</p>
+                <p className='text-lg text-center'>Maximize the impact of your project with these valuable add-ons and more</p>
                 <div className='grid m-auto place-items-center mt-12 gap-y-6
                                 min-[350px]:grid-rows-5 min-[350px]:grid-cols-2 min-[350px]:gap-x-1 min-[350px]:w-4/5
                                 lg:grid-rows-4 lg:grid-cols-3 lg:gap-x-12
