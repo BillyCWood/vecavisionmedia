@@ -13,7 +13,6 @@
     };
 */
 
-import { cloudinaryLoader } from "next-cloudinary";
 
 // --VIDEO OBJECTS--
 const JackDaniel = {
@@ -178,10 +177,31 @@ export const videos = [
     MTFlavor
 ];
 
-// CAROUSEL VIDEOS
-export const featuredVideos = [
-    JackDaniel,
-    SpecialK,
-    DavesSushi,
-    MontanaFence
-];
+
+export const categories = [
+    {
+        name: 'Product',
+        category: 'product',
+        colors: 'bg-[#4d0066] border-[#4d0066]  hover:text-[#4d0066]',
+    }, 
+    {
+        name: 'Service/Brand',
+        category: 'service',
+        colors: 'bg-[#01417c]  border-[#01417c]  hover:text-[#01417c]',
+    }, 
+    {
+        name: 'Real Estate',
+        category: 'real estate',
+        colors: 'bg-[#017c64] border-[#017c64]  hover:text-[#017c64]',
+    }, 
+    {
+        name: 'Industrial',
+        category: 'industrial',
+        colors: 'bg-[#1b5c78]  border-[#1b5c78]  hover:text-[#1b5c78]',
+    }, 
+    {
+        name: 'Clear',
+        category: '',
+        colors: 'bg-white  text-black hover:bg-[#aaa]',
+    }, 
+]

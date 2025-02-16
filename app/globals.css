@@ -182,3 +182,14 @@
 #bottom-slide-2 {
   @apply animate-infinite-scroll-right;
 }
+
+
+
+.portfolio-button_lg {
+    @apply p-2 w-32 rounded-3xl border-[2px] hover:bg-white transition-all duration-500 ease-linear; 
+}
+
+
+.portfolio-button {
+    @apply p-4 w-56 border-[2px] hover:bg-white transition-all duration-300 ease-linear; 
+}
