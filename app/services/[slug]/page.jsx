@@ -27,7 +27,7 @@ const page = ({ searchParams }) => {
             <h2 className="flex items-center gap-x-2"><Video size={24} />Versatile Creativity</h2>
             <p className="mb-5">We will bring your unique ideas to life by providing versatile video solutions for any need that doesn't fit into one of our categories.</p>
 
-            <div className="border-[1px] border-white rounded-[12px] py-5 mt-14 w-96 mx-auto">
+            <div className="border-[1px] border-white rounded-[12px] py-5 mt-14 w-80 mx-auto">
                 <h2 className="text-vvm-lightblue font-bold ml-12">Services</h2>
                 {
                     services.map((service, index) => (
@@ -49,7 +49,7 @@ const page = ({ searchParams }) => {
 
             <div className='mt-20 mb-6 flex flex-col items-center text-center'>
                 <h2 className='text-vvm-lightblue font-bold'>Let's Bring Your Vision to Life</h2>
-                <p className='mb-8 text-lg md:text-xl lg:text-2xl mx-32'>Pricing is based on the project. Want to know how much your project will cost?</p>
+                <p className='mb-8 text-lg md:text-xl lg:text-2xl mx-9'>Pricing is based on the project. Want to know how much your project will cost?</p>
                 <Link href={"/contact"}><Button text="Request an Estimate" /></Link>
             </div>
         </main>

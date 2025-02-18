@@ -40,7 +40,7 @@ export default function Services(){
             </div>
             <div className='mt-20 mb-6 flex flex-col items-center text-center'>
                 <h2 className='text-vvm-lightblue font-bold'>Let's Bring Your Vision to Life</h2>
-                <p className='mb-8 text-lg md:text-xl lg:text-2xl mx-32'>Pricing is based on the project. Want to know how much your project will cost?</p>
+                <p className='mb-8 text-lg md:text-xl lg:text-2xl mx-12'>Pricing is based on the project. Want to know how much your project will cost?</p>
                 <Link href={"/contact"}><Button text="Request an Estimate" /></Link>
             </div>
             
