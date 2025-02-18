@@ -6,8 +6,7 @@ import { services } from "../../../utils/constants";
 const page = ({ searchParams }) => {
 
 
-    const data = searchParams.pageData;
-    console.log(data);
+  
 
     return (
         <main className="mx-10">
