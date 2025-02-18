@@ -13,7 +13,7 @@ export default function About(){
             <div className="pt-10 pb-10 border-b border-vvm-teal">
                 <h2 className="font-bold text-2xl text-vvm-lightblue">Our Purpose</h2>
                 <p className="italic mt-2 mb-10">Bringing Your Vision to Life, Frame by Frame.</p>
-                <p className="px-6 sm:px-16 lg:px-32 2xl:px-[33rem] mb-6 text-left text-lg">Driven by the belief that authentic storytelling and high-quality visuals have the power to transform businesses and captivate audiences, Veca Vision Media exists to put that power into the hands of businesses by providing exceptional video marketing and advertising services.</p>
+                <p className="px-6 sm:px-16 lg:px-32 2xl:px-[33rem] mb-6 text-left">Driven by the belief that authentic storytelling and high-quality visuals have the power to transform businesses and captivate audiences, Veca Vision Media exists to put that power into the hands of businesses by providing exceptional video marketing and advertising services.</p>
                 <p className="px-6 sm:px-16 lg:px-32 2xl:px-[33rem] mb-6 text-left">“Using video to connect with a prospect is so much more than a cold call. It humanized the selling process” -Jill Rowley</p>
             </div>
             

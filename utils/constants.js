@@ -205,3 +205,36 @@ export const categories = [
         colors: 'bg-white  text-black hover:bg-[#aaa]',
     }, 
 ]
+
+export const services = [
+    {
+        name: 'Commercials & Advertising',
+        path: '/services/commercials-advertising',
+        summary: 'Promote your brand with high-energy and visually compelling that build excitement around your events, launches, products, or services.',
+        description: 'Lorem Ipsum',
+    },
+    {
+        name: 'Educational & Informative',
+        path: '/services/education-information',
+        summary: 'Clear and concise videos designed to teach or explain specific topics, concepts, or skills, and provide valuable information that helps you audience make informed decisions.',
+        description: 'Lorem Ipsum',
+    },
+    {
+        name: 'Recurring Content Plan',
+        path: '/services/recurring-content-plan',
+        summary: 'Streamline ongoing monthly content creation and marketing strategies with a solution tailored to your business or personal needs.',
+        description: 'Lorem Ipsum',
+    },
+    {
+        name: 'Corporate Communications',
+        path: '/services/corporate-communications',
+        summary: 'Create videos tailored for specific internal business needs like onboarding and training, reports and presentations, or interviews and testimonials.',
+        description: 'Lorem Ipsum',
+    },
+    {
+        name: 'Add-ons',
+        path: '/services/addons',
+        summary: 'Maximize the impact of you project with valuable add-ons',
+        description: 'Lorem Ipsum',
+    }
+]

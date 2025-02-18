@@ -7,7 +7,7 @@ export default function Button(props){
             group
             bg-custom-gray 
             h-10 
-            w-56
+            w-48
             rounded-full 
             ease-in-out 
             duration-300 
@@ -20,7 +20,7 @@ export default function Button(props){
             aria-label="button"
             >
 
-                <span className="inline-block relative after:content-['\00BB'] after:text-vvm-lightblue after:absolute after:-right-5 after:opacity-0 after:group-hover:opacity-100 after:ease-in-out after:duration-300">{props.text}</span>
+                <span className="font-medium text-sm md:text-base lg:text-lg inline-block relative after:content-['\00BB'] after:text-vvm-lightblue after:absolute after:-right-5 after:opacity-0 after:group-hover:opacity-100 after:ease-in-out after:duration-300">{props.text}</span>
 
             </div>
         

@@ -15,7 +15,7 @@ export default function Nav() {
             <div className="hidden z-20 lg:flex bg-[#000] border-b border-white justify-evenly items-center lg:px-24 xl:px-72">
                 <Link href="/" className="group flex items-center">
                     <Image src="/VVM-images/Veca-Vision2.png" alt="logo" width={75} height={75} className="m-0 p-0 group-hover:grayscale group-hover:ease-in-out group-hover:duration-300" />
-                    <p className="group-hover:text-vvm-lightblue  group-hover:ease-in-out group-hover:duration-300" >Veca Vision Media</p>
+                    <span className="group-hover:text-vvm-lightblue  group-hover:ease-in-out group-hover:duration-300" >Veca Vision Media</span>
                 </Link>
                 
                 <Link href="/services" className="hover:text-vvm-teal relative w-fit block after:block after:content-[''] after:absolute after:h-[2px] after:bg-vvm-teal after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left">Services</Link>

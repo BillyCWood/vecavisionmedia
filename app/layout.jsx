@@ -1,24 +1,13 @@
-import { Inter } from "next/font/google";
 import "./globals.css";
-import { Metadata } from 'next';
+import { Jost } from 'next/font/google';
+
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 
 import Nav from "./ui/nav";
 import Foot from "./ui/foot"
 
-
-const inter = Inter({ subsets: ["latin"] });
-
-
-export const metadata = {
-  title: {
-    template: '%s | Veca Vision Media',
-    default: 'Veca Vision Media',
-  },
-  description: "Videography Business based in Bozeman, MT",
-  keywords:['Videography', 'Videos', 'Advertisement', 'Bozeman', 'Montana', 'MT', 'Veca', 'Vision', 'Media'],
-};
+const jost = Jost({subsets: ['latin']})
 
 
 export default function RootLayout({ children }) {
@@ -34,7 +23,7 @@ export default function RootLayout({ children }) {
         
       </head>
 
-      <body className={`${inter.className} text-[#fff] bg-[#000]`}>
+      <body className={` ${jost.className} text-white bg-black`}>
         
         <div className="flex flex-col min-h-screen justify-between">
           <header className="sticky top-0 z-10">
@@ -48,7 +37,7 @@ export default function RootLayout({ children }) {
           </div>
           
           
-          <footer className="relative border-t border-white pt-3 pb-2 bg-[#000]">
+          <footer className="relative border-t border-white pt-3 pb-2 bg-black">
 
             <Foot />
 
