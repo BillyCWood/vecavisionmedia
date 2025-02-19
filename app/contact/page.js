@@ -70,27 +70,27 @@ export default function Contact(){
                 
                 <div className="flex flex-col">
                     <label className="mb-1">Name:</label>
-                    <input className="mb-6 w-96 rounded-lg text-[#000] pl-2" type="text" id="name" name="name" value={name} aria-hidden={false} aria-label="Name" onChange={ (e) => setName(e.target.value) } required />
+                    <input className="mb-6 w-96 rounded-lg text-black pl-2" type="text" id="name" name="name" value={name} aria-hidden={false} aria-label="Name" onChange={ (e) => setName(e.target.value) } required />
                 </div>
 
                 <div className="flex flex-col">
                     <label className="mb-1">Email:</label>
-                    <input className="mb-6 w-96 rounded-lg text-[#000] pl-2" type="email" id="email" name="email" value={email} aria-hidden={false} aria-label="Email Address" onChange={ (e) => setEmail(e.target.value) } required />
+                    <input className="mb-6 w-96 rounded-lg text-black pl-2" type="email" id="email" name="email" value={email} aria-hidden={false} aria-label="Email Address" onChange={ (e) => setEmail(e.target.value) } required />
                 </div>
 
                 <div className="flex flex-col">
                     <label className="mb-1">Phone:</label>
-                    <input className="mb-6 w-96 rounded-lg text-[#000] pl-2" type="text" id="phone" name="phone" value={phone} aria-hidden={false} aria-label="Phone Number" onChange={ (e) => setPhone(e.target.value) } required />
+                    <input className="mb-6 w-96 rounded-lg text-black pl-2" type="text" id="phone" name="phone" value={phone} aria-hidden={false} aria-label="Phone Number" onChange={ (e) => setPhone(e.target.value) } required />
                 </div>
 
                 <div className="flex flex-col">
                     <label className="mb-1">Organization (if applicable):</label>
-                    <input className="mb-6 w-96 rounded-lg text-[#000] pl-2" type="text" id="org" name="org" value={org} aria-hidden={false} aria-label="Organization" onChange={ (e) => setOrg(e.target.value) } required />
+                    <input className="mb-6 w-96 rounded-lg text-black pl-2" type="text" id="org" name="org" value={org} aria-hidden={false} aria-label="Organization" onChange={ (e) => setOrg(e.target.value) } required />
                 </div>
 
                 <div className="flex flex-col">
                     <label className="mb-1">Tell Us What You're Looking For:</label>
-                    <textarea className="mb-6 w-96 h-64 rounded-lg text-[#000] pl-2 pr-2" type="text" id="message" name="message" value={message} aria-hidden={false} aria-label="Tell us what you're looking for" onChange={ (e) => setMessage(e.target.value) } required />
+                    <textarea className="mb-6 w-96 h-64 rounded-lg text-black pl-2 pr-2" type="text" id="message" name="message" value={message} aria-hidden={false} aria-label="Tell us what you're looking for" onChange={ (e) => setMessage(e.target.value) } required />
                 </div>
 
                 <button type="submit" aria-hidden={false} aria-label="submit button" disabled={isLoading}>

@@ -12,7 +12,7 @@ export default function Nav() {
     
     return(
         <div>
-            <div className="hidden z-20 lg:flex bg-[#000] border-b border-white justify-evenly items-center lg:px-24 xl:px-72">
+            <div className="hidden z-20 lg:flex bg-black border-b border-white justify-evenly items-center lg:px-24 xl:px-72">
                 <Link href="/" className="group flex items-center">
                     <Image src="/VVM-images/Veca-Vision2.png" alt="logo" width={75} height={75} className="m-0 p-0 group-hover:grayscale group-hover:ease-in-out group-hover:duration-300" />
                     <span className="group-hover:text-vvm-lightblue  group-hover:ease-in-out group-hover:duration-300" >Veca Vision Media</span>
@@ -25,7 +25,7 @@ export default function Nav() {
                 
                 
             </div>
-            <div className="flex lg:hidden z-20 sticky top-0 bg-[#000] border-b border-white px-6 justify-between">
+            <div className="flex lg:hidden z-20 sticky top-0 bg-black border-b border-white px-6 justify-between">
                 <Link href="/" className="flex items-center ease-in-out duration-300">
                     <Image src="/VVM-images/Veca-Vision2.png" alt="logo" width={75} height={75} className="m-0 p-0" />
                 </Link>
@@ -34,7 +34,7 @@ export default function Nav() {
                     <span className={ `block w-6 border-b ${ isOpen ? '-rotate-[225deg] duration-500 -translate-y-px' : 'rotate-0 duration-500' } `} />
                 </button>
             </div>
-            <div className={ `lg:hidden w-screen float-right bg-[#000] ${ isOpen ? 'flex flex-col' : 'hidden' }` }>
+            <div className={ `lg:hidden w-screen float-right bg-black ${ isOpen ? 'flex flex-col' : 'hidden' }` }>
                 <Link href="/services" className="text-right py-4 pr-6 my-3 border-b border-vvm-pink">Services</Link>
                 <Link href="/portfolio" className="text-right py-4 pr-6 mb-3 border-b border-vvm-teal">Portfolio</Link>
                 <Link href="/about" className="text-right py-4 pr-6 mb-3 border-b border-vvm-blue">About</Link>
