@@ -18,7 +18,7 @@ export default function Services(){
                 <p className='w-3/4'>Hook your audience, engage their senses, and leave an unforgettable impression with captivating video productions that elevate your brand.</p>
             </div>
 
-            <div className='max-w-96 mx-auto mt-14'>
+            <div className='max-w-96 mx-auto mt-14 px-6'>
                 <h1 className='text-vvm-lightblue mb-4'>Our Services</h1>
                 {
                     services.map((service, index) => (
@@ -40,7 +40,7 @@ export default function Services(){
             </div>
             <div className='mt-20 mb-6 flex flex-col items-center text-center'>
                 <h2 className='text-vvm-lightblue font-bold'>Let's Bring Your Vision to Life</h2>
-                <p className='mb-8 text-lg md:text-xl lg:text-2xl mx-12'>Pricing is based on the project. Want to know how much your project will cost?</p>
+                <p className='mb-8 text-lg md:text-xl lg:text-2xl mx-8'>Pricing is based on the project. Want to know how much your project will cost?</p>
                 <Link href={"/contact"}><Button text="Request an Estimate" /></Link>
             </div>
             
