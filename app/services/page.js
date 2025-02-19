@@ -11,30 +11,44 @@ export const metadata = {
 
 export default function Services(){
     return (
-        <main className="pb-10  relative">
-            <div className='w-screen h-1/4 overflow-hidden relative pl-10 py-32'>
+        <main className="pb-10 relative">
+            <div className='w-screen overflow-hidden relative max-lg:pl-10 py-32'>
                 <Image src={'/images/harry-cunningham-7L2h4zTYiNI-unsplash.jpg'} style={{objectFit:'cover'}} fill className='opacity-30 -z-10' alt='studio set'/>
-                <h1 className='text-vvm-lightblue text-left'>Inspire, Engage, and Impress</h1>
-                <p className='w-3/4'>Hook your audience, engage their senses, and leave an unforgettable impression with captivating video productions that elevate your brand.</p>
+                <div className='w-3/4 lg:mx-auto lg:text-center'>
+                    <h1 className='text-vvm-lightblue'>Inspire, Engage, and Impress</h1>
+                    <p className=''>Hook your audience, engage their senses, and leave an unforgettable impression with captivating video productions that elevate your brand.</p>
+                </div>
             </div>
 
-            <div className='max-w-96 mx-auto mt-14 px-6'>
+            <div className='max-md:max-w-96 md:w-10/12 xl:w-3/4 2xl:w-1/2 mx-auto md:max-lg:ml-10 mt-14 max-md:px-6'>
                 <h1 className='text-vvm-lightblue mb-4'>Our Services</h1>
-                {
-                    services.map((service, index) => (
-                        <Link href={{
-                            pathname: service.path,
-                            query: {
-                                name: service.name,
-                                description: service.description, 
-                            }
-                        }} key={index} >
-                            <h2 className='flex items-center gap-x-2 mt-5 mb-3'>{service.name} <SquareArrowOutUpRight size={20} color='#ac00e6' /></h2>
-                            <p className='pb-6'>{service.summary}</p>
-                            <div className='h-0 w-full border-b-2 border-white' />
-                        </Link>
-                    ))
-                }
+                <div className='lg:grid lg:grid-cols-2 lg:gap-10'>
+
+                    {
+                        services.map((service, index) => (
+                            <div className={`${index==4 ? 'col-span-2 text-center' : ''}`} key={index}>
+                                <Link  
+                                    href={
+                                        {
+                                            pathname: service.path,
+                                            query: {
+                                                name: service.name,
+                                                description: service.description, 
+                                            }
+                                        }
+                                    }  
+                                    >
+                                    <div className={`lg:border-[1px] border-custom-gray hover:border-vvm-pink transition-colors duration-300 rounded-[12px] lg:px-5 ${index==4 ? '' : 'lg:min-h-52 2xl:min-h-56'}`}>
+
+                                        <h2 className={`flex items-center gap-x-2 mt-5 mb-3 ${index==4 ? 'w-fit lg:mx-auto' : ''}`}>{service.name} <SquareArrowOutUpRight size={20} color='#ac00e6' /></h2>
+                                        <p className='pb-6'>{service.summary}</p>
+                                        <div className='h-0 w-full max-lg:border-b-2 border-white' />
+                                    </div>
+                                </Link>
+                            </div>
+                        ))
+                    }
+                </div>
 
                 
             </div>

@@ -40,9 +40,9 @@ React.useEffect(() => {
 
         <div className="min-h-[80vh] relative">
             <Image src={'/images/ben-collins-SpDOwp6PnBs-unsplash.jpg'} alt="camera 1" objectFit="cover" objectPosition="25% 0%" className="-z-10 opacity-30" fill priority />
-            <div className="flex flex-col pl-10 md:pl-16 translate-y-[40vh]">
-                <h1 className="text-left text-vvm-lightblue">Bringing Your Vision to Life, <br className="md:max-lg:hidden"></br>One Frame at a Time</h1>
-                <p className="mb-5 text-left w-3/4 lg:text-2xl">We can help you create impressive video content that will grow your business and help you stand out in a sea of sameness.</p>
+            <div className="flex flex-col pl-10 md:pl-16 lg:pl-32 xl:pl-48 2xl:pl-96 translate-y-[40vh] w-fit">
+                <h1 className="text-left text-vvm-lightblue">Bringing Your Vision to Life, <br className="md:max-lg:hidden xl:hidden"></br>One Frame at a Time</h1>
+                <p className="mb-5 text-left w-3/4 xl:w-3/5 lg:text-2xl">We can help you create impressive video content that will grow your business and help you stand out in a sea of sameness.</p>
                 <Link href="/contact" className="w-40"><Button text="Learn How" /></Link>
             </div>
         </div>
