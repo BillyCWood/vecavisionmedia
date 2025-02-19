@@ -33,6 +33,15 @@ p {
   transition: all 1s
 }
 
+.hero-service-card {
+    @apply max-w-80 md:max-w-96 max-md:border-b-2 border-white pb-10 mx-auto flex flex-col items-center md:bg-custom-gray md:rounded-xl md:px-3;
+}
+
+.hero-service-card-icon {
+    @apply max-md:hidden bg-vvm-pink rounded-full -translate-y-[24px];
+}
+
+
 .show {
   opacity: 1;
   filter: blur(0px);
@@ -109,8 +118,4 @@ p {
 
 .portfolio-button {
     @apply p-4 w-56 border-[2px] hover:bg-white transition-all duration-300 ease-linear; 
-}
-
-.hero-service-card-icon {
-    @apply max-md:hidden bg-vvm-pink rounded-full -translate-y-[24px];
 }

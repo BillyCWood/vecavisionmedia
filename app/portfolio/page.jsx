@@ -40,7 +40,7 @@ export default function Portfolio() {
             <div className={`w-56 mx-auto ${show ? '' : 'relative -z-10'}`}>
                 {
                     categories.map((category, index) => (
-                        <button className={` portfolio-button ${category.colors} ${show ? '' : 'absolute top-0 -translate-y-[60px] rounded-3xl'} ${index == 4 ? 'rounded-b-3xl text-black hover:text-white': ''}`} key={index} onClick={()=> setCategory(category.category)}>{ category.name }</button>
+                        <button className={` portfolio-button ${category.colors} ${show ? '' : 'absolute top-0 -translate-y-[60px] rounded-3xl'} ${index == 4 ? 'rounded-b-3xl text-black hover:text-white': ''}`} key={index} onClick={()=> {setCategory(category.category); setShow(!show)}}>{ category.name }</button>
                     ))
                 } 
             
