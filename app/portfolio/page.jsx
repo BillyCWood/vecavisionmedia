@@ -18,11 +18,11 @@ export default function Portfolio() {
                 // because Tailwind does not support dynamic classes... SO BACK TO THE ORIGINAL WAY; IF IT AINT BROKE DON'T FIX IT!
             }
             <div className={`z-0 flex gap-x-4 ml-6`}>
-                <button className={`bg-[#4d0066] p-2 w-32 rounded-3xl border-[2px] border-[#4d0066] hover:bg-white hover:text-[#4d0066] transition-all duration-300 ease-linear  ${show ?  'translate-x-0' : '-translate-x-[152px]'}`} onClick={() => setCategory('product')}>Product</button>
-                <button className={`bg-[#01417c] p-2 w-32 rounded-3xl border-[2px] border-[#01417c] hover:bg-white hover:text-[#01417c] transition-all duration-300 ease-linear  ${show ?  'translate-x-0' : '-translate-x-[300px]'}`} onClick={() => setCategory('service')}>Service/Brand</button>
-                <button className={`bg-[#017c64] p-2 w-32 rounded-3xl border-[2px] border-[#017c64] hover:bg-white hover:text-[#017c64] transition-all duration-300 ease-linear  ${show ?  'translate-x-0' : '-translate-x-[450px]'}`} onClick={() => setCategory('real estate')}>Real Estate</button>
-                <button className={`bg-[#1b5c78] p-2 w-32 rounded-3xl border-[2px] border-[#1b5c78] hover:bg-white hover:text-[#1b5c78] transition-all duration-300 ease-linear  ${show ?  'translate-x-0' : '-translate-x-[600px]'}`} onClick={() => setCategory('industrial')}>Industrial</button>
-                <button className={`bg-white border-[2px] border-white text-black hover:bg-[#aaa] hover:text-white transition-all duration-300 ease-linear p-2 w-32 rounded-3xl ${show ?  'translate-x-0' : '-translate-x-[750px]'}`} onClick={() => setCategory('')}>Clear</button>
+                <button className={`bg-[#4d0066] p-2 w-32 rounded-3xl border-[2px] border-[#4d0066] hover:bg-white hover:text-[#4d0066] transition-all duration-300 ease-linear  ${show ?  'translate-x-0' : '-translate-x-[152px]'}`} onClick={() => {setCategory('product'); setShow(!show)}}>Product</button>
+                <button className={`bg-[#01417c] p-2 w-32 rounded-3xl border-[2px] border-[#01417c] hover:bg-white hover:text-[#01417c] transition-all duration-300 ease-linear  ${show ?  'translate-x-0' : '-translate-x-[300px]'}`} onClick={() => {setCategory('service'); setShow(!show)}}>Service/Brand</button>
+                <button className={`bg-[#017c64] p-2 w-32 rounded-3xl border-[2px] border-[#017c64] hover:bg-white hover:text-[#017c64] transition-all duration-300 ease-linear  ${show ?  'translate-x-0' : '-translate-x-[450px]'}`} onClick={() => {setCategory('real estate'); setShow(!show)}}>Real Estate</button>
+                <button className={`bg-[#1b5c78] p-2 w-32 rounded-3xl border-[2px] border-[#1b5c78] hover:bg-white hover:text-[#1b5c78] transition-all duration-300 ease-linear  ${show ?  'translate-x-0' : '-translate-x-[600px]'}`} onClick={() => {setCategory('industrial'); setShow(!show)}}>Industrial</button>
+                <button className={`bg-white border-[2px] border-white text-black hover:bg-[#aaa] hover:text-white transition-all duration-300 ease-linear p-2 w-32 rounded-3xl ${show ?  'translate-x-0' : '-translate-x-[750px]'}`} onClick={() => {setCategory(''); setShow(!show)}}>Clear</button>
             </div>
         </div>
 
