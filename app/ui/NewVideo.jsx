@@ -20,7 +20,7 @@ const NewVideo = ( { title, thumbnail, src, description, alt } ) => {
         <h1 className="text-xl font-bold mb-2">{title}</h1>
         
         <div className="group grid place-items-center [grid-template-areas:'stack'] bg-vvm-pink rounded-[12px] overflow-hidden" onClick={() => setShow('fixed')}>
-            <Image src={thumbnail} alt={alt} width={1920} height={1080} className='transition-opacity ease-in-out duration-300 group-hover:opacity-20 group-hover:cursor-pointer [grid-area:stack] object-contain' />
+            <Image src={thumbnail} alt={alt} width={1920} height={1080} className='transition-opacity ease-in-out duration-300 group-hover:opacity-10 group-hover:cursor-pointer [grid-area:stack] object-contain' />
             <p className="hidden lg:block opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300 [grid-area:stack] group-hover:cursor-pointer z-[2] px-6 xl:px-28">{description}</p>
         </div>
 

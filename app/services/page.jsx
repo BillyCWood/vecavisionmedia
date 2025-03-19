@@ -2,6 +2,7 @@ import Button from '../ui/button';
 import Link from 'next/link';
 import Image from 'next/image';
 import { SquareArrowOutUpRight } from 'lucide-react';
+import { CloudSunRain, Clapperboard, Video, MoveRight, Icon } from "lucide-react"
 import { services } from '../../utils/constants';
  
 export const metadata = {
@@ -11,7 +12,7 @@ export const metadata = {
 
 export default function Services(){
     return (
-        <main className="pb-10 relative">
+        <main className='pb-10 relative'>
             <div className='w-screen overflow-hidden relative max-lg:pl-10 py-32'>
                 <Image src={'/images/harry-cunningham-7L2h4zTYiNI-unsplash.jpg'} style={{objectFit:'cover'}} fill className='opacity-30 -z-10' alt='studio set'/>
                 <div className='w-3/4 lg:mx-auto lg:text-center'>
@@ -28,15 +29,7 @@ export default function Services(){
                         services.map((service, index) => (
                             <div className={`${index==4 ? 'col-span-2 text-center' : ''}`} key={index}>
                                 <Link  
-                                    href={
-                                        {
-                                            pathname: service.path,
-                                            query: {
-                                                name: service.name,
-                                                description: service.description, 
-                                            }
-                                        }
-                                    }  
+                                    href={`/services/${service.slug}`}  
                                     >
                                     <div className={`lg:border-[1px] border-custom-gray hover:border-vvm-pink transition-colors duration-300 rounded-[12px] lg:px-5 ${index==4 ? '' : 'lg:min-h-52 2xl:min-h-56'}`}>
 
@@ -50,9 +43,20 @@ export default function Services(){
                     }
                 </div>
 
+                <div className="w-full mt-20">
+                    <h2 className="flex items-center gap-x-2 w-fit mx-auto"><Clapperboard size={24} color='#38BDF8' />Full Set Production</h2>
+                    <p className="mb-10 text-center">End-to-end video creation, from pre-production planning to on-set shooting and detailed post-production editing.</p>
+
+                    <h2 className="flex items-center gap-x-2 w-fit mx-auto"><CloudSunRain size={24} color='#38BDF8' />Film in All Environments</h2>
+                    <p className="mb-10 text-center">Sunshine, wind, rain, or snow, we'll brave the elements to get the shot of your dreams.</p>
+
+                    <h2 className="flex items-center gap-x-2 w-fit mx-auto"><Video size={24} color='#38BDF8' />Versatile Creativity</h2>
+                    <p className="text-center">We will bring your unique ideas to life by providing versatile video solutions for any need that doesn't fit into one of our categories.</p>
+                </div>
+
                 
             </div>
-            <div className='mt-20 mb-6 flex flex-col items-center text-center'>
+            <div className='mt-20 mb-20 flex flex-col items-center text-center'>
                 <h2 className='text-vvm-lightblue font-bold'>Let's Bring Your Vision to Life</h2>
                 <p className='mb-8 text-lg md:text-xl lg:text-2xl mx-8'>Pricing is based on the project. Want to know how much your project will cost?</p>
                 <Link href={"/contact"}><Button text="Request an Estimate" /></Link>

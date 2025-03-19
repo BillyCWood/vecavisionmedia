@@ -111,7 +111,7 @@ const EvolveSalon =  {
     thumbnail: '/thumbnails/evolve_thumbnail.jpg',
     cloudinaryThumbnail: 'evolve_thumbnail_ff9xky',
     thumbnailAltText: "Evolve Hair Design Thumbnail",
-    description: "",
+    description: "Evolve your hair",
 };
 
 const WillieDist =  {
@@ -122,7 +122,7 @@ const WillieDist =  {
     thumbnail: '/thumbnails/willie_thumbnail.jpg',
     cloudinaryThumbnail: 'willie_thumbnail_yfmghj',
     thumbnailAltText: "Willie's Distillery Thumbnail",
-    description: "",
+    description: "Spirits of the American West",
 };
 
 const TjaConsult =  {
@@ -133,7 +133,7 @@ const TjaConsult =  {
     thumbnail: '/thumbnails/TJAConsulting_thumbnail.jpg',
     cloudinaryThumbnail: 'TJAConsulting_ivlfan',
     thumbnailAltText: "TJA Consulting thumbnail",
-    description: "",
+    description: " A business consulting firm specializing in tailored solutions for startups with marketing strategies, SEO services, social media management and comprehensive business growth support across various industries.",
 };
 
 const CraftedAesWell =  {
@@ -144,7 +144,7 @@ const CraftedAesWell =  {
     thumbnail: '/thumbnails/CraftedAes_thumbnail.png',
     cloudinaryThumbnail: 'CraftedAes_thumbnail_xhx9zs',
     thumbnailAltText: "Crafted Aesthetics and Wellness Thumbnail",
-    description: "",
+    description: "Skilled and experienced providers of beauty treatments",
 };
 
 const MTFlavor =  {
@@ -155,7 +155,7 @@ const MTFlavor =  {
     thumbnail: '/thumbnails/MontanaFlavor_thumbnail.jpg',
     cloudinaryThumbnail: 'MontanaFlavor_gs3ude',
     thumbnailAltText: "Montana Flavor Thumbnail",
-    description: "",
+    description: "Pure taste, zero fillers",
 };
 
 
@@ -209,32 +209,72 @@ export const categories = [
 export const services = [
     {
         name: 'Commercials & Advertising',
-        path: '/services/commercials-advertising',
+        slug: 'commercials-advertising',
         summary: 'Promote your brand with high-energy and visually compelling that build excitement around your events, launches, products, or services.',
-        description: 'Lorem Ipsum',
+        description: 'High-impact video content designed to captivate audiences, build brand awareness, and drive conversions. Whether for TV, social media, or digital ads, we craft compelling visual narratives tailored to your brand\'s identity and goals.',
+        features: [
+            { title: 'Cinematic Video Ads', description: 'Professionally produced advertisements that leave a lasting impression.' },
+            { title: 'Social Media Campaign Videos', description: 'Engaging content optimized for platforms like Instagram, Facebook, and YouTube.' },
+            { title: 'Product & Service Promotions', description: 'Showcasing your unique offerings in a way that resonates with your target audience.' },
+            { title: 'Testimonial & Case Study Videos', description: 'Authentic customer stories that build trust and credibility.' },
+            { title: 'Event Highlight Reels', description: 'Dynamic recap videos capturing the essence of your events.' }
+        ]
     },
     {
         name: 'Educational & Informative',
-        path: '/services/education-information',
+        slug: 'education-information',
         summary: 'Clear and concise videos designed to teach or explain specific topics, concepts, or skills, and provide valuable information that helps you audience make informed decisions.',
-        description: 'Lorem Ipsum',
+        description: 'Engaging, knowledge-driven video content designed to inform, teach, and inspire. Perfect for training programs, instructional content, and thought-leadership pieces that establish authority in your industry.',
+        features: [
+            { title: 'Explainer Videos', description: 'Clear and concise videos breaking down complex topics.' },
+            { title: 'How-To\'s & Tutorials', description: 'Step-by-step guides that educate and engage audiences.' },
+            { title: 'Industry Insights & Thought Leadership', description: 'Position yourself as an expert with informative content.' },
+            { title: 'FAQ & Myth-Busting', description: 'Address common questions and misconceptions in an engaging way.' },
+            { title: 'Employee Training & Onboarding', description: 'Streamline internal education with structured video training.' }
+        ]
     },
     {
         name: 'Recurring Content Plan',
-        path: '/services/recurring-content-plan',
+        slug: 'recurring-content-plan',
         summary: 'Streamline ongoing monthly content creation and marketing strategies with a solution tailored to your business or personal needs.',
-        description: 'Lorem Ipsum',
+        description: 'A strategic content creation service that ensures your brand stays consistently visible and engaging online. Our RCP delivers high-quality video and photo content tailored for ongoing marketing needs.',
+        features: [
+            { title: 'Monthly Content Shoots', description: 'Dedicated sessions capturing video and photo content in bulk for maximum efficiency.' },
+            { title: 'Story Highlights', description: 'Branded short-form clips designed specifically for Instagram & Facebook Stories.' },
+            { title: 'Cinematic Highlight Reels', description: 'Polished, high-quality reels optimized for TikTok, Instagram, and YouTube Shorts.' },
+            { title: 'Recurring Photos', description: 'A set of branded photos tailored for posts, stories, and promotions.' },
+            { title: 'Managed Content Posting', description: 'We handle scheduling and posting for a consistent online presence without the hassle.' },
+            { title: 'Managed Captions & Hashtags', description: 'Engaging, brand-aligned captions and strategic hashtag selections to boost reach and engagement.' },
+            { title: 'Monthly Marketing Strategy Meeting', description: 'A planning session each month to map out key content focuses, including: seasonal & holiday promotions, business goals, and product- or service-feature-month.' },
+        ]
     },
     {
         name: 'Corporate Communications',
-        path: '/services/corporate-communications',
+        slug: 'corporate-communications',
         summary: 'Create videos tailored for specific internal business needs like onboarding and training, reports and presentations, or interviews and testimonials.',
-        description: 'Lorem Ipsum',
+        description: 'Professional video solutions tailored for internal and external corporate messaging. Whether for company updates, training, or brand storytelling, we create polished and effective visual content.',
+        features: [
+            { title: 'Brand Story Videos', description: 'Showcasing your company’s mission, values, and impact.' },
+            { title: 'Internal Training & HR Videos', description: 'Streamlined content for onboarding and education.' },
+            { title: 'Company Culture & Recruitment Videos', description: 'Attract top talent with authentic brand storytelling.' },
+            { title: 'CEO & Executive Messages', description: 'Professionally produced leadership communications.' },
+            { title: 'Investor & Stakeholder Presentations', description: 'Engaging video assets to support business growth.' }
+        ]
     },
     {
         name: 'Add-ons',
-        path: '/services/addons',
+        slug: 'addons',
         summary: 'Maximize the impact of you project with valuable add-ons',
-        description: 'Lorem Ipsum',
+        description: 'Optimize your project by maximizing its impact with extras that further enhance engagement, visibility, and value.',
+        features: [
+            { title: 'Variant Edits', description: 'Additional edit(s) created from the original footage for more value and purposes.' },
+            { title: 'Teaser Posts', description: 'Eye-catching social media teaser videos to generate buzz before the main release.' },
+            { title: 'Pre-Post Story Teasers', description: 'Social Media story teasers released just before your main video post to build excitement.' },
+            { title: 'Story Promos / Boomerangs', description: 'Engaging story promos and eye-catching boomerangs created from your footage to boost your social media presence.' },
+            { title: 'Video Photo Grabs', description: 'High-quality photo stills extracted from your video footage for additional social media or promotional use.' },
+            { title: 'Captivating thumbnail work', description: 'Custom-designed thumbnails that grab attention and drive engagement.' },
+            { title: 'Voice over integration', description: 'Professional voice overs seamlessly added to enhance your video.' },
+            { title: 'BTS (Behind The Scenes)', description: 'Behind-the-scenes footage for promoting our project or showcasing our process as we collaberate.' },
+        ]
     }
 ]
