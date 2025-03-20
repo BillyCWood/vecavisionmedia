@@ -13,7 +13,6 @@ export default async function Page({ params }){
         <main className="max-lg:mx-10 lg:w-3/5 mx-auto">
             <div className="mt-10 mb-20">
                 <h1 className='text-vvm-lightblue'>{pageInfo.name}</h1>
-                <h2 className="mt-8">Description</h2>
                 <p>{pageInfo.description}</p>
             </div>
 
