@@ -4,8 +4,8 @@ import { Jost } from 'next/font/google';
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 
-import Nav from "./ui/nav";
-import Foot from "./ui/foot"
+import Nav from "./ui/general/nav";
+import Foot from "./ui/general/foot"
 
 const jost = Jost({subsets: ['latin']})
 

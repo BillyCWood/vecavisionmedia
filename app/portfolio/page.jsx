@@ -1,6 +1,6 @@
 'use client';
 import { useState } from "react";
-import Filtered from '../ui/Filtered';
+import Filtered from '../ui/portfolio/Filtered';
 import { categories } from "../../utils/constants";
 
 

@@ -1,6 +1,6 @@
 import { CloudSunRain, Clapperboard, Video, MoveRight, Icon } from "lucide-react"
 import Link from "next/link";
-import Button from "../../ui/button";
+import Button from "../../ui/general/button";
 import { services } from "../../../utils/constants";
 import { features } from "process";
 

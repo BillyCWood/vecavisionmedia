@@ -1,4 +1,4 @@
-import Button from '../ui/button';
+import Button from '../ui/general/button';
 import Link from 'next/link';
 import Image from 'next/image';
 import { SquareArrowOutUpRight } from 'lucide-react';

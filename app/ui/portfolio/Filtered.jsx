@@ -1,4 +1,4 @@
-import { videos } from "../../utils/constants";
+import { videos } from "../../../utils/constants";
 import NewVideo from './NewVideo';
 
 const Filtered = ({ category }) => {

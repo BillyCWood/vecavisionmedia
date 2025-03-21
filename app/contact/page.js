@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 
-import Button from "../ui/button";
+import Button from "../ui/general/button";
 
 import { useState } from "react";
 //import { useRouter } from "next/navigation";

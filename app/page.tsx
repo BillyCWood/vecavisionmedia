@@ -2,8 +2,10 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import Button from "./ui/button";
-import CompanyLogos from './ui/CompanyLogos';
+import Button from "./ui/general/button";
+import Spacer from "./ui/general/Spacer";
+import CompanyLogos from './ui/home/CompanyLogos';
+import About from './ui/home/About';
 import React from "react";
 
 import { Zap, TrendingUp, Brain, RefreshCcw } from 'lucide-react';
@@ -49,9 +51,9 @@ React.useEffect(() => {
 
 
 
-        {/* Section 2 */}
+        {/* Section 2 - Services */}
 
-        <div className="relative mb-20 pt-10 md:pt-20 border-t-2 border-white">
+        <div className="relative pt-10 md:pt-20 border-t-2 border-white/50">
             <div className="flex flex-col items-center gap-y-2 ">
                 <h1 className="max-lg:mt-10 text-vvm-lightblue">Inspire, Engage, and Impress</h1>
                 <p className="mb-14 w-4/5 mx-auto text-center lg:text-2xl">Hook your audience, engage their senses, and leave an unforgettable impression with captivating video productions that elevate your brand.</p>
@@ -102,16 +104,24 @@ React.useEffect(() => {
             </div>
         </div>
 
+        <Spacer />
 
 
+        {/* Section 3 - About */}
+        <About /> 
 
+        {/* Section 4 - Logo Carousel */}
+        <Spacer />
         <CompanyLogos />
-        <div className="flex flex-col items-center gap-y-2 my-20 px-6">
+
+        <Spacer />
+
+        <div className="flex flex-col items-center gap-y-2 px-6">
             <h1 className="font-bold text-2xl text-vvm-lightblue">See it for Yourself</h1>
             <p className="mb-6 rounded-full lg:text-2xl">Watch how we've brought our clients' vision to life.</p>
             <Link href="/portfolio"><Button text="View the Vision" /></Link>
         </div>
-      
+        <Spacer />      
     </main>
     
     
