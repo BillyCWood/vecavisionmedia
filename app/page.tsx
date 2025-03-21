@@ -6,7 +6,7 @@ import Button from "./ui/button";
 import CompanyLogos from './ui/CompanyLogos';
 import React from "react";
 
-import { Zap, TrendingUp, Eye, RefreshCcw } from 'lucide-react';
+import { Zap, TrendingUp, Brain, RefreshCcw } from 'lucide-react';
 
 export default function Home() {
 
@@ -61,28 +61,36 @@ React.useEffect(() => {
 
                     <div id="service1" className="hero-service-card service-item">
                         <TrendingUp fill="" size={48} absoluteStrokeWidth={true} className="md:hidden "/> 
-                        <TrendingUp fill="#ac00e6" size={48} absoluteStrokeWidth={true} className="hero-service-card-icon"/> 
+                        <div className="hero-service-card-icon-container">
+                            <TrendingUp fill="#ac00e6" size={48} absoluteStrokeWidth={true} className=""/> 
+                        </div>
                         <h2 className="text-center mb-4">Promotional</h2>
                         <p className="md:text-center lg:text-2xl">Promote products with visually compelling videos that sell the feeling of having your product</p>
                     </div>
 
                     <div id="service2" className="hero-service-card service-item">
                         <Zap fill="" size={48} absoluteStrokeWidth={true} className="md:hidden"/>
-                        <Zap fill="#ac00e6" size={48} absoluteStrokeWidth={true} className="hero-service-card-icon"/>
+                        <div className="hero-service-card-icon-container">
+                            <Zap fill="#ac00e6" size={48} absoluteStrokeWidth={true} className=""/> 
+                        </div>
                         <h2 className="text-center mb-4">Hype</h2>
                         <p className="md:text-center lg:text-2xl">High-energy videos designed to build excitement around events, launches, products, or services</p>
                     </div>
 
                     <div id="service3" className="hero-service-card service-item">
-                        <Eye fill="" size={48} absoluteStrokeWidth={true} className="md:hidden"/> 
-                        <Eye fill="#ac00e6" size={48} absoluteStrokeWidth={true} className="hero-service-card-icon"/> 
-                        <h2 className="text-center mb-4">Captivating Thumbnails</h2>
-                        <p className="md:text-center lg:text-2xl">Custom-designed thumbnails that grab attention and drive engagement</p>
+                        <Brain fill="" size={48} absoluteStrokeWidth={true} className="md:hidden"/>
+                        <div className="hero-service-card-icon-container">
+                            <Brain fill="#ac00e6" size={48} absoluteStrokeWidth={true} className=""/> 
+                        </div>
+                        <h2 className="text-center mb-4">Educational & Informative</h2>
+                        <p className="md:text-center lg:text-2xl">Engaging videos that teach, explain, and establish authority in your industry</p>
                     </div>
 
                     <div id="service4" className="hero-service-card service-item">
                         <RefreshCcw fill="" size={48} absoluteStrokeWidth={true} className="md:hidden"/>
-                        <RefreshCcw fill="#ac00e6" size={48} absoluteStrokeWidth={true} className="hero-service-card-icon"/>
+                        <div className="hero-service-card-icon-container">
+                            <RefreshCcw fill="#ac00e6" size={48} absoluteStrokeWidth={true} className=""/> 
+                        </div>
                         <h2 className="text-center mb-4">Recurring Content Plan</h2>
                         <p className="md:text-center lg:text-2xl">A tailored solution to streamline ongoing content creation and marketing strategies on a monthly basis</p>
                     </div>
