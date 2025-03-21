@@ -62,7 +62,7 @@ React.useEffect(() => {
                 <div id="home-service-container" className="grid grid-cols-1 grid-rows-4 md:grid-cols-2 md:grid-rows-2 max-lg:gap-y-10 md:max-lg:gap-x-4 lg:gap-y-16 lg:gap-x-16 text-left mb-10 lg:mt-10 2xl:mt-14 md:pl-5 md:pr-9">
 
                     <div id="service1" className="hero-service-card service-item">
-                        <TrendingUp fill="" size={48} absoluteStrokeWidth={true} className="md:hidden "/> 
+                        <TrendingUp fill="#090909" size={48} absoluteStrokeWidth={true} className="md:hidden "/> 
                         <div className="hero-service-card-icon-container">
                             <TrendingUp fill="#ac00e6" size={48} absoluteStrokeWidth={true} className=""/> 
                         </div>
@@ -71,7 +71,7 @@ React.useEffect(() => {
                     </div>
 
                     <div id="service2" className="hero-service-card service-item">
-                        <Zap fill="" size={48} absoluteStrokeWidth={true} className="md:hidden"/>
+                        <Zap fill="#090909" size={48} absoluteStrokeWidth={true} className="md:hidden"/>
                         <div className="hero-service-card-icon-container">
                             <Zap fill="#ac00e6" size={48} absoluteStrokeWidth={true} className=""/> 
                         </div>
@@ -80,7 +80,7 @@ React.useEffect(() => {
                     </div>
 
                     <div id="service3" className="hero-service-card service-item">
-                        <Brain fill="" size={48} absoluteStrokeWidth={true} className="md:hidden"/>
+                        <Brain fill="#090909" size={48} absoluteStrokeWidth={true} className="md:hidden"/>
                         <div className="hero-service-card-icon-container">
                             <Brain fill="#ac00e6" size={48} absoluteStrokeWidth={true} className=""/> 
                         </div>
@@ -89,7 +89,7 @@ React.useEffect(() => {
                     </div>
 
                     <div id="service4" className="hero-service-card service-item">
-                        <RefreshCcw fill="" size={48} absoluteStrokeWidth={true} className="md:hidden"/>
+                        <RefreshCcw fill="#090909" size={48} absoluteStrokeWidth={true} className="md:hidden"/>
                         <div className="hero-service-card-icon-container">
                             <RefreshCcw fill="#ac00e6" size={48} absoluteStrokeWidth={true} className=""/> 
                         </div>

@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
         
       </head>
 
-      <body className={` ${jost.className} text-white bg-black`}>
+      <body className={` ${jost.className} text-white bg-[#090909]`}>
         
         <div className="flex flex-col min-h-screen justify-between">
           <header className="sticky top-0 z-10">
@@ -37,7 +37,7 @@ export default function RootLayout({ children }) {
           </div>
           
           
-          <footer className="relative border-t border-white pt-3 pb-2 bg-black">
+          <footer className="relative border-t border-white/50 pt-3 pb-2 bg-black">
 
             <Foot />
 

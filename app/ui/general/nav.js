@@ -12,7 +12,7 @@ export default function Nav() {
     
     return(
         <div>
-            <div className="hidden z-20 lg:flex bg-black border-b border-white justify-evenly items-center lg:px-24 xl:px-72">
+            <div className="hidden z-20 lg:flex bg-black border-b border-white/50 justify-evenly items-center lg:px-24 xl:px-72">
                 <Link href="/" className="group flex items-center">
                     <Image src="/VVM-images/Veca-Vision2.png" alt="logo" width={75} height={75} className="m-0 p-0 group-hover:grayscale group-hover:ease-in-out group-hover:duration-300" />
                     <span className="group-hover:text-vvm-lightblue  group-hover:ease-in-out group-hover:duration-300" >Veca Vision Media</span>
@@ -35,10 +35,10 @@ export default function Nav() {
                 </button>
             </div>
             <div className={ `lg:hidden w-screen float-right bg-black ${ isOpen ? 'flex flex-col' : 'hidden' }` }>
-                <Link href="/services" className="text-right py-4 pr-6 my-3 border-b border-vvm-pink">Services</Link>
-                <Link href="/portfolio" className="text-right py-4 pr-6 mb-3 border-b border-vvm-teal">Portfolio</Link>
-                <Link href="/about" className="text-right py-4 pr-6 mb-3 border-b border-vvm-blue">About</Link>
-                <Link href="/contact" className="text-right py-4 pr-6 border-b border-white">Contact</Link>
+                <Link href="/services" className="text-right py-4 pr-6 my-3 border-b border-vvm-pink" onClick={() => setIsOpen(!isOpen)}>Services</Link>
+                <Link href="/portfolio" className="text-right py-4 pr-6 mb-3 border-b border-vvm-teal" onClick={() => setIsOpen(!isOpen)}>Portfolio</Link>
+                <Link href="/about" className="text-right py-4 pr-6 mb-3 border-b border-vvm-blue" onClick={() => setIsOpen(!isOpen)}>About</Link>
+                <Link href="/contact" className="text-right py-4 pr-6 border-b border-white" onClick={() => setIsOpen(!isOpen)}>Contact</Link>
             </div>
         </div>
     );
