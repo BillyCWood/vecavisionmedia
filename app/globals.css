@@ -49,6 +49,13 @@ p {
     @apply mb-6 w-96 rounded-[4px] text-white bg-[#090909] border-2 border-white/50 pl-2 py-1;
 }
 
+.portfolio-filter-button {
+    @apply p-2 w-32 rounded-3xl border-[2px] hover:bg-white transition-all duration-300 ease-linear;
+}
+
+.portfolio-filter-button-responsive {
+    @apply w-56 py-4 border-[2px] hover:bg-white transition-all duration-300 ease-linear;
+}
 
 .show {
   opacity: 1;
