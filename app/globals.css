@@ -41,6 +41,14 @@ p {
     @apply max-md:hidden w-fit p-2 bg-vvm-pink rounded-full -translate-y-[24px];
 }
 
+.about-p {
+    @apply px-6 sm:px-16 max-w-[1260px] mx-auto mb-6 text-left;
+}
+
+.contact-input {
+    @apply mb-6 w-96 rounded-[4px] text-white bg-[#090909] border-2 border-custom-gray pl-2 py-1;
+}
+
 
 .show {
   opacity: 1;

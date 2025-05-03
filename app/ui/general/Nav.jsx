@@ -12,7 +12,7 @@ export default function Nav() {
     
     return(
         <div>
-            <div className="hidden z-20 lg:flex bg-black border-b border-white/50 justify-evenly items-center lg:px-24 xl:px-72">
+            <div className="hidden z-20 lg:flex bg-black/60 backdrop-blur-md border-b border-white/50 justify-evenly items-center lg:px-24 xl:px-72">
                 <Link href="/" className="group flex items-center">
                     <Image src="/VVM-images/Veca-Vision2.png" alt="logo" width={75} height={75} className="m-0 p-0 group-hover:grayscale group-hover:ease-in-out group-hover:duration-300" />
                     <span className="group-hover:text-vvm-lightblue  group-hover:ease-in-out group-hover:duration-300" >Veca Vision Media</span>

@@ -55,7 +55,6 @@ export default function Contact(){
 
     return (
         <main className="pt-10 pb-10 relative">
-            <Image src={'/VVM-bg-images/adrien-olichon-X8o-P23flgI-unsplash.webp'} alt="background image" style={{objectFit:'cover'}} className='-z-10 opacity-30' fill priority />
             <h2 className="font-bold text-xl text-center text-vvm-lightblue">Contact Veca Vision Media</h2>
             <Image src="/VVM-images/Veca-Vision.png" width={150} height={1} aria-hidden={true} alt="alternate logo" className="mx-auto" />
             <div className="flex justify-center">
@@ -70,27 +69,27 @@ export default function Contact(){
                 
                 <div className="flex flex-col">
                     <label className="mb-1">Name:</label>
-                    <input className="mb-6 w-96 rounded-lg text-black pl-2" type="text" id="name" name="name" value={name} aria-hidden={false} aria-label="Name" onChange={ (e) => setName(e.target.value) } required />
+                    <input className="contact-input" type="text" id="name" name="name" value={name} aria-hidden={false} aria-label="Name" onChange={ (e) => setName(e.target.value) } required />
                 </div>
 
                 <div className="flex flex-col">
                     <label className="mb-1">Email:</label>
-                    <input className="mb-6 w-96 rounded-lg text-black pl-2" type="email" id="email" name="email" value={email} aria-hidden={false} aria-label="Email Address" onChange={ (e) => setEmail(e.target.value) } required />
+                    <input className="contact-input" type="email" id="email" name="email" value={email} aria-hidden={false} aria-label="Email Address" onChange={ (e) => setEmail(e.target.value) } required />
                 </div>
 
                 <div className="flex flex-col">
                     <label className="mb-1">Phone:</label>
-                    <input className="mb-6 w-96 rounded-lg text-black pl-2" type="text" id="phone" name="phone" value={phone} aria-hidden={false} aria-label="Phone Number" onChange={ (e) => setPhone(e.target.value) } required />
+                    <input className="contact-input" type="text" id="phone" name="phone" value={phone} aria-hidden={false} aria-label="Phone Number" onChange={ (e) => setPhone(e.target.value) } required />
                 </div>
 
                 <div className="flex flex-col">
                     <label className="mb-1">Organization (if applicable):</label>
-                    <input className="mb-6 w-96 rounded-lg text-black pl-2" type="text" id="org" name="org" value={org} aria-hidden={false} aria-label="Organization" onChange={ (e) => setOrg(e.target.value) } required />
+                    <input className="contact-input" type="text" id="org" name="org" value={org} aria-hidden={false} aria-label="Organization" onChange={ (e) => setOrg(e.target.value) } required />
                 </div>
 
                 <div className="flex flex-col">
                     <label className="mb-1">Tell Us What You're Looking For:</label>
-                    <textarea className="mb-6 w-96 h-64 rounded-lg text-black pl-2 pr-2" type="text" id="message" name="message" value={message} aria-hidden={false} aria-label="Tell us what you're looking for" onChange={ (e) => setMessage(e.target.value) } required />
+                    <textarea className="contact-input h-64 pr-2" type="text" id="message" name="message" value={message} aria-hidden={false} aria-label="Tell us what you're looking for" onChange={ (e) => setMessage(e.target.value) } required />
                 </div>
 
                 <button type="submit" aria-hidden={false} aria-label="submit button" disabled={isLoading}>

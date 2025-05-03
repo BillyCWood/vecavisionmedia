@@ -4,8 +4,9 @@ import { Jost } from 'next/font/google';
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 
-import Nav from "./ui/general/nav";
+import Nav from "./ui/general/Nav";
 import Foot from "./ui/general/foot"
+import Banner from "./ui/general/Banner"
 
 const jost = Jost({subsets: ['latin']})
 
@@ -27,7 +28,8 @@ export default function RootLayout({ children }) {
         
         <div className="flex flex-col min-h-screen justify-between">
           <header className="sticky top-0 z-10">
-            <Nav />  
+            <Banner />  
+            <Nav />
           </header>
           
           <div className="mb-auto overflow-hidden">
