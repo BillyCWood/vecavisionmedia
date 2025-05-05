@@ -11,7 +11,7 @@ export default function About(){
         <main className="text-center relative leading-loose">
             <div className="pt-10 pb-10 border-b border-vvm-teal">
                 <h2 className="font-bold text-2xl text-vvm-lightblue">Our Purpose</h2>
-                <p className="italic mt-2 mb-10 opacity-50">Bringing Your Vision to Life, Frame by Frame.</p>
+                <p className="italic mt-2 mb-10 opacity-70">Bringing Your Vision to Life, Frame by Frame.</p>
                 <p className="about-p">Driven by the belief that authentic storytelling and high-quality visuals have the power to transform businesses and captivate audiences, Veca Vision Media exists to put that power into the hands of businesses by providing exceptional video marketing and advertising services.</p>
                 <div className="flex flex-col w-fit max-w-[1260px] mx-6 sm:mx-16 lg:mx-auto p-4 rounded-[8px]
                  bg-custom-gray">
@@ -23,14 +23,14 @@ export default function About(){
             
             <div className="pt-10 pb-10 border-b border-vvm-lightblue">
                 <h2 className="font-bold text-2xl text-vvm-lightblue">Our Mission</h2>
-                <p className="italic mt-2 mb-10 opacity-50">Inspire, Engage, and Impress, One Frame at a Time.</p>
+                <p className="italic mt-2 mb-10 opacity-70">Inspire, Engage, and Impress, One Frame at a Time.</p>
                 <p className="about-p">At Veca Vision Media, our mission is to empower businesses and brands to connect with their audiences through innovative and captivating visual storytelling. We are committed to delivering high-quality video production services that exceed our clients' expectations, driven by creativity, professionalism, and a relentless pursuit of excellence.</p>
             </div>
             
            
             <div className="pt-10 pb-10 border-b border-vvm-blue">
                 <h2 className="font-bold text-2xl text-vvm-lightblue">Our Origin</h2>
-                <p className="italic mt-2 mb-10 opacity-50">Discovery, Enthusiasm, and Passion.</p>
+                <p className="italic mt-2 mb-10 opacity-70">Discovery, Enthusiasm, and Passion.</p>
                 <p className="about-p">
                 After finding my grandma's disposable camera on the kitchen sink, I looked down the viewfinder and was immediately fascinated at the fact that I could record absolutely anything and play it back. That day, I realized I could capture life in a whole new way; I was hooked. Around the summer of 2023, I came to the conclusion that I wanted to share the art of videography with others in an impactful and meaningful way that could return a high rate of value. I started this videography business with the hope that the same passion I found in videography at the age of 8 would spark excitement in others as well. Veca Vision Media was created to show that passion through each and every frame, leaving you and your audience in awe.
                 </p>
@@ -45,9 +45,11 @@ export default function About(){
 
             <div className="pt-10 pb-10">
                 <h2 className="font-bold text-2xl text-vvm-lightblue mb-10">Backed by the Gallatin Valley</h2>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-y-10 gap-x-0 w-full max-w-[800px] mx-auto place-items-center">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-10 gap-x-0 w-full max-w-[800px] mx-auto place-items-center">
                     <Image src={'/logos/Daves_Sushi.svg'} width={128} height={128} className="grayscale hover:grayscale-0 transition duration-200 ease-linear"/>
                     <Image src={'/logos/jam.svg'} width={128} height={128} className="grayscale hover:grayscale-0 transition duration-200 ease-linear" />
+                    <Image src={'/logos/revelry.webp'} width={128} height={128} className="grayscale hover:grayscale-0 transition duration-200 ease-linear" />
+                    <Image src={'/logos/Tarantinos-logo-small.webp'} width={175} height={175} className="grayscale hover:grayscale-0 transition duration-200 ease-linear" />
                     <Image src={'/logos/WilliesDistillery.svg'} width={128} height={128} className="grayscale hover:grayscale-0 transition duration-200 ease-linear"/>
                     <Image src={'/logos/montana_fence_green.webp'} width={200} height={200} className="grayscale hover:grayscale-0 transition duration-200 ease-linear"/>
                     <Image src={'/logos/mountain_italian_ice_color.webp'} width={128} height={128} className="grayscale hover:grayscale-0 transition duration-200 ease-linear"/>
