@@ -21,6 +21,7 @@ export default function RootLayout({ children }) {
         <meta name="keywords" content="videography, videos, advertisement, bozeman, montana, mt, veca vision media" />
         <meta name="description" content="Videography Business based in Bozeman, MT" />
         <link rel="icon" href="/icon.ico" sizes="any" />
+        <script src="https://www.google.com/recaptcha/enterprise.js"></script>
         
       </head>
 

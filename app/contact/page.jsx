@@ -17,6 +17,7 @@ export default function Contact(){
     const [phone, setPhone] = useState('');
     const [org, setOrg] = useState('');
     const [message, setMessage] = useState('');
+    const [role, setRole] = useState('safe');
     const [isLoading, setIsLoading] = useState(false);
 
     const handleSubmit = async (e) => {
@@ -29,25 +30,29 @@ export default function Contact(){
             phone, 
             org, 
             message,
+            role
         };
 
         console.log(data);
 
-        const res = await fetch( "/api/send", { method: "POST", headers:{'Content-Type': 'application/json',}, body: JSON.stringify(data), });
-        
-        console.log(res.status);
+        if(role === 'safe')
+        {
+            const res = await fetch( "/api/send", { method: "POST", headers:{'Content-Type': 'application/json',}, body: JSON.stringify(data), });
 
-        if(res.status === 200) {
-            alert("Success! Your message and information has been submitted! Thank you!");
-            setIsLoading(false);
-            setName('');
-            setEmail('');
-            setPhone('');
-            setOrg('');
-            setMessage('');
-        }
-        else if(res.status === 500) {
-            alert("Uh oh! Something went wrong on our end. We apologize for the inconvenience.")
+            console.log(res.status);
+
+            if(res.status === 200) {
+                alert("Success! Your message and information has been submitted! Thank you!");
+                setIsLoading(false);
+                setName('');
+                setEmail('');
+                setPhone('');
+                setOrg('');
+                setMessage('');
+            }
+            else if(res.status === 500) {
+                alert("Uh oh! Something went wrong on our end. We apologize for the inconvenience.")
+            }
         }
 
     };
@@ -85,6 +90,11 @@ export default function Contact(){
                 <div className="flex flex-col">
                     <label className="mb-1">Organization (if applicable):</label>
                     <input className="contact-input" type="text" id="org" name="org" value={org} aria-hidden={false} aria-label="Organization" onChange={ (e) => setOrg(e.target.value) } required />
+                </div>
+
+                <div className="hidden invisible">
+                    <label className="mb-1">Job Role:</label>
+                    <input className="contact-input" type="text" id="role" name="role" value={role} aria-hidden={false} aria-label="Role" onChange={ (e) => setRole(e.target.value) } />
                 </div>
 
                 <div className="flex flex-col">
